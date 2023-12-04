@@ -38,5 +38,5 @@
         new WOW().init();
     </script>
 
-    <title>EGPCE | Gestão do Tempo </title>
+<title>EGPCE | Calc - Intermediário e Avançado</title>
 </head>

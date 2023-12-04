@@ -16,7 +16,7 @@
             <a href="topico01.php">
                 <span class="icon "><i class="bi bi-1-circle"></i>
                 </span>
-                <span class="txt">A Mentalidade Realizadora</i></span>
+                <span class="txt">Tabela Dinâmica e Gráfico Dinâmico</i></span>
             </a>
         </li>
 
@@ -24,15 +24,7 @@
             <a href="topico02.php">
                 <span class="icon "><i class="bi bi-2-circle"></i>
                 </span>
-                <span class="txt">Sistema 5s aplicado à gestão do tempo</i></span>
-            </a>
-        </li>
-
-        <li class="menu">
-            <a href="topico03.php">
-                <span class="icon "><i class="bi bi-3-circle"></i>
-                </span>
-                <span class="txt">Mudança de Hábitos</i></span>
+                <span class="txt">Macros</i></span>
             </a>
         </li>
 

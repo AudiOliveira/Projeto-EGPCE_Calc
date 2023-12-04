@@ -31,184 +31,415 @@ include('layout/header.php');
 
             <!--  Título Pricipal -->
             <h2 class="Titulo fw-bolder wow fadeIn" data-wow-delay="0.3s">
-              </span>01 - A Mentalidade Realizadora</h2><br>
+              </span>01 - Tabela Dinâmica e Gráfico Dinâmico</h2><br>
             <!--  Título Principal -->
 
-            <!-- IMAGEM NO SITE  -->
-              <div class="img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-left">
-                <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 1:</strong>
-                  Representação de planejamento</p>
-                <div class="zoom">
-                  <a href="imgs02/Figura01.png" data-bs-toggle="modal" data-bs-target="#Imagem1">
-                    <img src="imgs02/Figura01.png" alt="Imagem que remete a organização" id="img-1">
-                  </a>
-                </div>
-                <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong>Banco de Imagem Gratuita</p>
+            <div class="passos">
+              <div>
+             <!--  Objetivo -->
+             <p class="wow fadeIn" style="margin-bottom: 10px;" id="text-left"><strong>Objetivo:</strong> Trabalhar com tabelas e gráficos dinâmicos para melhorar a visualização dos dados</p>
+             <br>
+             <!-- Parágrafo com a biblioteca de animação  -->
+              <p class="wow fadeIn" data-wow-delay="0.3s">
+              Um relatório de tabela dinâmica é utilizado para resumir, 
+              analisar, explorar e apresentar dados de resumo e para ver 
+              comparações, padrões e tendências facilmente. O relatório de 
+              tabela dinâmica permite tomar decisões corretas sobre dados críticos.<br><br>
+                            </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+            </div>
+            <!--  Figura da página -->
+            <div class="img_apresentacao wow animate__slideInRight" data-wow-delay="0.3s">
+                                <img src="imgs/Group 17.png" alt="">
+                                <p class="FonteFigura FonteMenor text-secondary" id="text-freepik">
+                                    <strong>Fonte: </strong>
+                                    <a href="https://www.freepik.com/free-vector/multitasking-concept_6596995.htm"
+                                        target="_blank" rel="noopener noreferrer"> <strong> Imagem retirada do
+                                            Freepik</strong></a>
+                                </p>
+                            </div>
               </div>
 
-              <!-- Imagem - MODAL-->
-              <div class="modal fade text-center" id="Imagem1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
-                  <div class="modal-content w-75">
-                    <img class="img-fluid" src="imgs02/Figura01.png" alt="Alt da imagem fica aqui">
-                  </div>
-                  <div class="modal-footer w-75 bg-light justify-content-center">
-                    <p class="text-secondary"><strong>Fonte:</strong>Banco de Imagem Gratuita</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Imagem - End-->
-
-              <!-- FIM DA IMAGEM NO SITE  -->
-
+              <!--  Título Calc01 -->
+              <h2 class="ti wow fadeIn">Criação de uma Tabela Dinâmica e Gráfico Dinâmico</h2><br>
+              
               <!-- Parágrafo com a biblioteca de animação  -->
-              <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left">Grandes realizações exigem uma mente
-                realizadora.
-                Talvez neste
-                ponto você já esteja
-                ansioso (a) para praticar tudo aquilo que foi ensinado de modo a tornar realidade aquilo que foi
-                idealizado. Entretanto, é preciso perceber que o foco deste curso é o longo prazo e para este a
-                ansiedade
-                é uma grande inimiga.
-              </p>
-              <!--  Fim do Parágrafo com a biblioteca de animação -->
+              <p class="wow fadeIn" data-wow-delay="0.3s"><ol class="wow fadeIn" id="" data-wow-delay="0.3s">
+              <p>Também conhecido como Assistente de Dados, a Tabela Dinâmica é um recurso do Calc para criar um relatório de tabela dinâmica ou gráfico dinâmico. Você deve se conectar à fonte de dados e inserir o local do relatório. Essa fonte não deve conter colunas ou linhas vazias. Por exemplo, linhas ou colunas em branco, que são usadas para separar um bloco de dados de outro, devem ser removidas.
+            <p><br>
+              <li>Digite a planilha 07;
+            <br></li>
+              <li>Selecione os dados da tabela;<br></li>
+            </ol>
+                            </p>
+             <!--  Fim do Parágrafo com a biblioteca de animação -->
 
-
-              <!-- Parágrafo com a biblioteca de animação  -->
-              <p class="wow fadeIn" data-wow-delay="0.3s">Se você se identifica com adjetivos que lhe encaminham para o
-                alinhamento com fracasso,
-                sua mente também tratará de realizar este alinhamento. Tenho visto ao longo do meu trabalho como
-                mentora,
-                pessoas com potencial gigante que não conseguem realizar tudo o que sua capacidade lhe permitiria por
-                medos, inseguranças e crenças limitantes.
-              </p>
-              <!--  Fim do Parágrafo com a biblioteca de animação -->
-              <!-- Interação com aluno-->
-              <div class="p-2 rounded wow fadeIn" data-wow-delay="0.3s" id="text-left2">
-                <!-- Interação com aluno-->
-                <p>
-                  Por essa razão, a gestão do tempo precisa
-                  ser praticada
-                  logo após a <strong> profunda
-                    limpeza </strong> de tudo aquilo que não permite que a nova identidade seja realizada e isso
-                  significa a
-                  retirada de crenças limitantes, de identidades conflitantes e de tudo que possa impedir que a sua
-                  nova
-                  agenda seja realizada.
-                </p>
+              <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 1:</strong>
+              Planilha 07.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura01.png" data-bs-toggle="modal" data-bs-target="#Imagem1">
+                  <img src="imgs03/Figura01.png" height="auto" width="700px" alt="Imagem que remete a organização" id="img-1">
+                </a>
               </div>
-              <!--  Fim do Parágrafo com a biblioteca de animação -->
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
 
-
-
-            <!-- CAIXA DE TEXTO FIQUE-ATENTO -->
-            <section class="container wow fadeIn" data-wow-delay="0.3s">
-              <div class="accordion ">
-                <section id="content">
-                  <div class="caixaprincipal" id="titulofiqueatento">
-                    <div class="div_teste">
-                      <div><i class="fa-solid fa-person-circle-exclamation"></i> FIQUE ATENTO </div>
-                      <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
-                    </div>
-                  </div> <!--caixa Principal-->
-                  <div class="accordion-content" id="fiqueatento"><!--caixa secundaria-->
-                    <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
-                    <p class="txt-caixasecundaria">Considerando que o foco neste curso não é a <strong>Inteligência
-                        Emocional </strong> , eu apenas vou confiar que você possa realizar o trabalho de
-                      autoconhecimento necessário para separar-se das crenças que lhe impedem de ser a melhor versão de
-                      você. Meu foco será lhe direcionar para uma profunda limpeza daquilo que lhe impede de ter tempo
-                      para tornar-se um realizador.</p>
-                    </p>
-                  </div>
-                </section>
-            </section>
-            <!-- FIM DA CAIXA FIQUE ATENTO -->
-
-            <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s">Toda faxina se inicia pela retirada de obstáculos e objetos.
-              Neste caso
-              em específico,
-              para que você possa liberar espaço na sua agenda para uma nova versão de você, a limpeza requer alguns
-              pontos tais como a execução da <strong> lista de tarefas, a escolha de prioridades e elaboração de
-                limites.</strong>
-            </p>
-            <!--  Fim do Parágrafo com a biblioteca de animação -->
-
-            <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s ms-3">Se você está sobrecarregado com uma lista astronômica de
-              coisas a
-              fazer sem que ela
-              nunca consiga ser finalizada, com certeza existe algum ajuste necessário. Pode ser que você não esteja
-              sendo um executor eficiente, ou esteja se comprometendo com mais coisas do que você pode entregar ou está
-              <strong> procrastinando </strong> para realizar as tarefas que são agendadas.
-            </p>
-            <!--  Fim do Parágrafo com a biblioteca de animação -->
-
-            <!-- CAIXA DE TEXTO IMPORTANTE -->
-            <section class="container wow fadeIn" data-wow-delay="0.3s">
-              <div class="accordion">
-                <section id="content">
-                  <div class="caixaprincipal" id="tituloimportante">
-                    <div class="div_teste">
-                      <div><i class="bi bi-exclamation-circle"></i> IMPORTANTE </div>
-                      <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
-                    </div>
-                  </div> <!--caixa Principal-->
-                  <div class="accordion-content" id="importante">
-                    <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
-                    <p class="txt-caixasecundaria">Eu gostaria que você compreendesse que não existe movimento e mudança
-                      em um lugar completamente tomado de entulhos. Se você se compromete com a realização do seu sonho
-                      é preciso que você desentulhe aquilo que está impedindo que a <strong> mudança tenha espaço
-                      </strong>. Por esta razão deixamos o curto prazo para este módulo porque é nele que iremos tratar
-                      de desobstruir a agenda de modo a dar espaço para que as providências do médio e longo prazo sejam
-                      tomadas.</p> <!--caixa secundaria-->
-                  </div>
-                </section>
-              </div>
-            </section>
-            <!-- FIM DA CAIXA IMPORTANTE -->
-
-            <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s">É preciso ressaltar, no entanto, que a limpeza necessária para a
-              mudança de hábitos e a
-              execução do planejamento de longo prazo exige, em primeiro lugar, a mudança de mentalidade. Novamente, é
-              necessário romper com crenças limitantes como, por exemplo, acreditar que não existe qualquer espaço para
-              mudança ou que você não tem tempo para estabelecer o que for necessário.
-            </p>
-            <!--  Fim do Parágrafo com a biblioteca de animação -->
-
-            <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s ms-3">A mente pode tornar-se extremamente resistente à mudança.
-              Para que isso não ocorra
-              você precisa apresentá-la a alternativas para uma melhor utilização do tempo, mesmo que não haja espaço
-              livre atualmente em sua agenda. Como já foi mencionado na primeira parte, mesmo todas as pessoas tendo 24
-              horas por dia, algumas conseguem utilizá-lo melhor que outras. Isso é possível porque elas só acreditam
-              que uma melhor gestão do tempo é possível e as praticam diariamente.
-            </p>
-            <!--  Fim do Parágrafo com a biblioteca de animação -->
-
-            <!-- BOTÃO LER MAIS -->
-            <p class="d-flex justify-content-center gap-2 wow animate__slideInRight" data-wow-delay="0.3s">
-              <button class="btn" id="buton-lerMais2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#multiCollapseExample3" aria-expanded="false"
-                aria-controls="multiCollapseExample3"><strong>
-                  CLIQUE AQUI PARA SABER MAIS</strong></button>
-            </p>
-
-            <div class="collapse multi-collapse" id="multiCollapseExample3">
-
-              <div class="d-flex justify-content-center">
-                <div class="card card-body" style="width: 800px;" id="conteudo-LerMais">
-                  Para que você possa transformar os conhecimentos teóricos em
-                  ferramentas para realização de seus sonhos, alguns ajustes serão necessários. Como foi esclarecido
-                  antes, aquilo que focamos na nossa mente tende a se tornar realidade, pois a mente é obcecada em
-                  nos alinhar com aquilo que acreditamos que somos. <strong> Essa premissa serve para coisas
-                    positivas e coisas negativas.</strong></p>
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem1" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura01.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
                 </div>
               </div>
             </div>
-            <!-- BOTÃO LER MAIS -->
+            <!-- Imagem - End-->
+
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s">3. Certifique-se de que o intervalo de células tenha títulos de coluna, que, na tabela dinâmica, são chamados de campos;
+                            </p>
+             <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+             <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 1.1</strong>
+              </p>
+              <div class="zoom">
+                <a href="imgs03/Figura011.png" data-bs-toggle="modal" data-bs-target="#Imagem011">
+                  <img src="imgs03/Figura011.png" height="auto" width="700px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem011" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura011.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+            <div class="passos">
+            <div>
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left">4. Para criar um relatório de tabela dinâmica,
+               vá até no menu “Dados” → Tabela dinâmica → Criar;<br>
+                5. Aparecerá a janela, que questiona qual a fonte de dados será utilizada:<p>
+          </div>
+            <!--  Fim do Parágrafo com a biblioteca de animação -->
+                  <div>
+
+                    <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 2:</strong>
+              Validação de Células (lista)</p>
+              <div class="zoom">
+                <a href="imgs03/Figura02.png" data-bs-toggle="modal" data-bs-target="#Imagem2">
+                  <img src="imgs03/Figura02.png" height="auto" width="300px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> Tecmundo.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem2" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura02.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> Tecmundo.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+                  </div> 
+                        </div>
+
+                        <div class="passos">
+            <div>
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left">A caixa de diálogo Criar Tabela Dinâmica é exibida na imagem 3.<p>
+          </div>
+            <!--  Fim do Parágrafo com a biblioteca de animação -->
+                  <div>
+
+                    <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 3:</strong>
+              Layout do Assistente de Dados.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura03.png" data-bs-toggle="modal" data-bs-target="#Imagem3">
+                  <img src="imgs03/Figura03.png" height="auto" width="400px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem3" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura03.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+                  </div> 
+                        </div>
+
+              <!-- Parágrafo com a biblioteca de animação  -->
+              <p class="wow fadeIn" data-wow-delay="0.3s">
+              6. Cada título de coluna é representado por um botão, 
+              que pode ser arrastado para qualquer uma das posições à 
+              esquerda (retângulos brancos), sendo que cada um representa os 
+              dados de uma forma diferente. Na figura acima, os botões já foram 
+              arrastados para dentro de seus respectivos campos desejados (Coluna, Linha e Dados), 
+              e o resultado (para esse exemplo) fica assim:<br><br>
+                            </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+
+              <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 4:</strong>
+              Criação da Tabela Dinâmica.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura04.png" data-bs-toggle="modal" data-bs-target="#Imagem4">
+                  <img src="imgs03/Figura04.png" height="auto" width="600px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem4" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura04.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+            <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 5:</strong>
+              Tabela Dinâmica.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura05.png" data-bs-toggle="modal" data-bs-target="#Imagem5">
+                  <img src="imgs03/Figura05.png" height="auto" width="600px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem5" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura05.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s">
+            Observe que você não precisa usar todos os campos da lista de campos para criar a tabela Dinâmica.<br><br>
+
+            Caso você deseje, pode rearranjar os dados de outra maneira, de acordo com a sua necessidade. 
+            Para isso, basta clicar em cima da tabela dinâmica com o botão direito e em seguida selecionar a 
+            opção ‘Editar esquema’. A mesma janela de antes será mostrada. Após isso, basta arrastar o campo 
+            desejado para a posição desejada.<br><br>
+                            </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+
+              <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 6:</strong>
+              Editar esquema.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura06.png" data-bs-toggle="modal" data-bs-target="#Imagem6">
+                  <img src="imgs03/Figura06.png" height="auto" width="600px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem6" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura06.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s">
+            Você deve ter reparado que, no final de cada linha e coluna, existe o total. 
+            Esse total é calculado sobre a linha ou coluna correspondente, e por padrão 
+            calcula a soma dos valores. No entanto, é possível utilizar outras funções, 
+            como média, máximo, mínimo, além de funções estatísticas, como desvio padrão. 
+            Para trocar a função da tabela dinâmica, vá até a tela de layout.<br><br>
+
+            Em ‘Campos de Dados’, existe um botão escrito ‘Soma – Valor’. Clique com o 
+            botão esquerdo sobre ele. Ao fazer isso, o botão ‘Opções’ à direita ficará disponível. 
+            Clique nesse botão.<br>
+            Aparecerá a janela ilustrada na imagem 7:<br><br>
+                            </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+
+              <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 7:</strong>
+              Campo de dados.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura07.png" data-bs-toggle="modal" data-bs-target="#Imagem7">
+                  <img src="imgs03/Figura07.png" height="auto" width="600px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem7" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura07.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn" data-wow-delay="0.3s">
+            Para mudar a função, basta apenas selecionar a que você deseja e clicar em ‘OK’. 
+            Em seguida, clique ‘OK’ novamente e a tabela já será atualizada.<br><br>
+
+            Falando em alterar valores na tabela original, você pode fazê-lo 
+            sem problemas. No entanto, a tabela dinâmica não é atualizada automaticamente. <br><br>
+            É necessário clicar com o botão direito em cima da tabela dinâmica e selecionar a opção ‘Atualizar’.<br><br>
+
+            Além de todos os recursos vistos aqui, é possível também aplicar filtragem à tabela dinâmica, 
+            da mesma maneira que é feito com uma tabela simples.<br><br>
+
+            Como você pode perceber, a tabela dinâmica é totalmente personalizável. Com ela, é possível 
+            visualizar valores por linhas, colunas, filtros, listas etc. É um recurso bastante útil 
+            em certos casos. Se você souber usá-lo corretamente, pode economizar muito tempo em suas tarefas.<br><br>
+                                        </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+
+          <!--  Título Calc01 -->
+          <h2 class="ti wow fadeIn">Gráficos Dinâmicos</h2><br>
+
+
+          <!-- Parágrafo com a biblioteca de animação  -->
+          <p class="wow fadeIn" data-wow-delay="0.3s">
+          Um gráfico dinâmico é uma representação gráfica de um resumo de dados exibido numa tabela dinâmica.<br><br>
+
+          Um gráfico dinâmico mostra a série de dados, as categorias e os eixos de gráfico da mesma forma que um gráfico 
+          “normal”, mas também apresenta controles de filtragem interativos para que possamos analisar rapidamente um 
+          subconjunto dos dados.<br><br>
+
+          Quando temos uma tabela com imensos dados numéricos ou alfanuméricos, é difícil perceber o sentido desses 
+          mesmos dados. Para nos ajudar a perceber melhor esses dados, um gráfico dinâmico é uma ótima ferramenta de ajuda.<br><br>
+
+          Para inserir um Gráfico dinâmico, clique em Inserir – Gráfico ou no símbolo na barra de ferramentas 
+          Padrão. Após isso ser feito, aparecerá a seguinte janela:<br><br>
+                                        </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+
+              <!-- IMAGEM NO SITE  -->
+            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+              <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 8:</strong>
+              Assistente de gráfico – Escolha do tipo de gráfico.</p>
+              <div class="zoom">
+                <a href="imgs03/Figura08.png" data-bs-toggle="modal" data-bs-target="#Imagem8">
+                  <img src="imgs03/Figura08.png" height="auto" width="600px" alt="Imagem que remete a organização" id="img-1">
+                </a>
+              </div>
+              <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+            </div>
+
+            <!-- Imagem - MODAL-->
+            <div class="modal fade text-center" id="Imagem8" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+                <div class="modal-content w-75">
+                  <img class="img-fluid" src="imgs03/Figura08.png" alt="Alt da imagem fica aqui">
+                </div>
+                <div class="modal-footer w-75 bg-light justify-content-center">
+                  <p class="text-secondary"><strong>Fonte:</strong> CEDIS.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Imagem - End-->
+
+             <!-- Parágrafo com a biblioteca de animação  -->
+          <p class="wow fadeIn" data-wow-delay="0.3s">
+          Escolha uma das opções disponíveis (Barra, Coluna, Pizza etc) e o subtipo, à direita. Um gráfico aparecerá, mostrando como o gráfico está 
+          ficando até o momento. Para cada alteração de tipo, subtipo ou qualquer outra, o gráfico é atualizado automaticamente.<br><br>
+
+          Não podemos criar um gráfico dinâmico sem uma tabela dinâmica associada.<br><br>
+
+          Um gráfico dinâmico reflete sempre o layout atual da tabela dinâmica. Se alterarmos o 
+          layout de uma tabela dinâmica, o layout do gráfico dinâmico correspondente também muda. 
+          E funciona na direção oposta. Se colocarmos filtros num gráfico dinâmico, a tabela dinâmica 
+          correspondente exibe os mesmos filtros.<br><br>
+
+          Outra funcionalidade que podemos executar é criar vários gráficos dinâmicos a partir 
+          de uma única tabela dinâmica e poder manipular e formatar os gráficos separadamente. 
+          No entanto, todos os gráficos exibem os mesmos dados.<br><br>
+                                        </p>
+              <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+            <!-- Parágrafo com a biblioteca de animação  -->
+            <p class="wow fadeIn"  data-wow-delay="0.3s"><strong>Parabéns! Nome_Completo Você finalizou o Topico 01 do modulo 03 do curso Calc Intermediário e Avançado. Boa sorte no Próximo Topico!</strong><p>
+          
+            <!--  Fim do Parágrafo com a biblioteca de animação -->
+          
 
 
           </div>
