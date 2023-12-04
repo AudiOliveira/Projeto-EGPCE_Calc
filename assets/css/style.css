@@ -1,0 +1,1726 @@
+/* font relawey (para os conteúdos de textos dos parágrafos)  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* OBS:
+A FUNÇÃO [data-theme="dark"] ALTERA O CONTEÚDO PARA O MODO ESCURO. */
+
+/* ######################################### CORES ########################################################## */
+:root {
+    --CormenuLateral: #EFF7F0;
+    --CorPreto: black;
+    --CorBranca: white;
+    --CorVerdeClaro: #44833D;
+    --CorCinzaEscuro: #b0b0b1;
+    --CorCinzaMaisClaro: #ccc;
+    --CorLaranjaClaroParaFonteDosaccordion: #664d03;
+    /* cores do estado */
+
+    /* CORES DOS TITULOS  */
+    --CorSubSubtopico: rgb(86, 161, 86);
+    --CorSubtopico: rgb(39, 156, 61);
+
+
+    /* modo escuro */
+    --color-light-50: #f8fafc;
+    --color-dark-50: #797984;
+    --color-dark-100: #29292B;
+    --color-dark-900: #231F20;
+    --color-green: #44833D;
+    --color-ciano: #2db39e;
+    --color-ciano2: rgb(14, 149, 129);
+
+    /* modo escuro - accordion*/
+    --RoxoEscuroImportante: #6022AF;
+    --RoxoClaroImportante: #E7D7F5;
+
+    --VermelhoEscuroFiqueAtento: #570000;
+    --VermelhoClaroFiqueAtento: #FAD3D3;
+
+    --VerdeEscuroReflita: #123901;
+    --VerdeClaroReflita: #C2D4BB;
+
+    --RosaEscuroExemplo: #96005C;
+    --RosaClaroExemplo: #FFCCEB;
+
+    --AzulEscuroSaibaMais: #022492;
+    --AzulClaroSaibaMais: #C6CAFF;
+
+
+    /* cor dos accordions */
+    --CorAccordionImportante: #f18519;
+    --CorAccordionImportanteMaisClaro: #ff7f0033;
+
+
+    /* cor dos accordions */
+    --CorAccordionImportante: #f18519;
+    --CorAccordionImportanteMaisClaro: #ff7f0033;
+
+    /* fontes */
+    --FonteArial: Arial, Helvetica, sans-serif;
+    --FonteRaleway: 'Raleway', sans-serif;
+    --FonteVerdana: Verdana, Geneva, Tahoma, sans-serif;
+    --FonteKanit: 'Kanit', sans-serif;
+    /* fontes end */
+}
+
+/* ######################################### CORES END ########################################################## */
+
+
+/* ######################################### GERAL ########################################################## */
+/* ------- CONFIGURAÇÕES GERAIS --------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FonteKanit);
+    font-weight: light;
+}
+
+/* ------- CONFIGURAÇÕES GERAIS END --------*/
+
+
+/* --------- CONFIGURAÇÃO BODY --------*/
+body {
+    margin: 0;
+    background-color: var(--white);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* CONFIGURAÇÃO DO SCROLL */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e9e9e9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 10px;
+}
+
+/* CONFIGURAÇÃO DO SCROOL END */
+
+/* --------- CONFIGURAÇÃO BODY END --------*/
+/* ######################################### GERAL END ########################################################## */
+
+
+/* ######################################### NAV ANIMADA  ########################################################## */
+
+/* aqui eu defini algumas propriedades que "ajudam" a nav a ficar animada --jayron-- */
+#navmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 4;
+}
+
+.nav {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.39);
+}
+
+/* modo escuro da nav */
+[data-theme="dark"] #navmenu {
+    background-color: var(--color-dark-100);
+}
+
+/* transição dos botões */
+.btn {
+    transition: 0.5s;
+}
+
+/* transição dos botões end */
+
+/* botão ir para o moodle - modo escuro */
+[data-theme="dark"] .btn-outline-success {
+    color: var(--color-light-50);
+    border: 1px solid white;
+}
+
+[data-theme="dark"] .btn-outline-success:hover {
+    border: 1px solid #198754;
+    transition: 0.2s;
+}
+
+/* botão ir para o moodle - modo escuro end */
+/* ######################################### NAV ANIMADA END ########################################################## */
+
+
+/* ######################################### MENU LATERAL ########################################################## */
+/* img logo da egp */
+#logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.menulateral:hover #logo {
+    width: 160px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 3rem;
+}
+
+/* fim do estilo da img */
+
+.menulateral {
+    width: 80px;
+    height: 100%;
+    background-color: #EFF7F0;
+    padding: 40px 0px 40px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+/* efeito hover do menu lateral */
+.menulateral:hover~.all-conteudo {
+    margin-left: 100px;
+}
+
+.menulateral:hover {
+    width: 280px;
+    z-index: 6;
+    overflow-y: auto;
+}
+
+.menulateral:hover::-webkit-scrollbar {
+    width: 7px;
+}
+
+.menulateral:hover::-webkit-scrollbar-track {
+    background: #EFF7F0;
+}
+
+.menulateral:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+}
+
+/* efeito hover do menu lateral end */
+
+/* lista não ordenada - menu lateral */
+.menulateral ul {
+    padding-left: 0px !important;
+    width: 105% !important;
+    position: relative;
+    right: 5%;
+}
+
+ul li.menu a {
+    color: #44833D;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 15px 0%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+    height: 65px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+ul li.menu a .txt {
+    margin-left: 2rem;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+ul li.menu a.ativo {
+    border-right: 5px solid #44833D;
+}
+
+ul li.menu a {
+    padding-left: 20px;
+}
+
+ul li.menu a .icon>i {
+    font-size: 25px;
+}
+
+ul li.menu a:hover {
+    color: #ffff;
+    background-color: #1a9c60;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    margin: 30px 0;
+}
+
+ol li {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200 !important;
+}
+
+
+/* configuração modo escuro do menu lateral */
+[data-theme="dark"] .menulateral {
+    background-color: var(--color-dark-900);
+}
+
+[data-theme="dark"] ol li {
+    color: white;
+}
+
+[data-theme="dark"] .list li {
+    color: white;
+}
+
+[data-theme="dark"] ul li.menu a {
+    color: var(--color-light-50);
+}
+
+[data-theme="dark"] ul li.menu a:hover {
+    background-color: #3be3e2;
+}
+
+[data-theme="dark"] ul li.menu a:hover {
+    color: rgb(0, 0, 0);
+}
+
+[data-theme="dark"] ul li.menu a.ativo {
+    border-right: 6px solid #1ab6b6;
+}
+
+/* configuração modo escuro do menu lateral end */
+
+/* lista não ordenada - menu lateral end */
+
+
+/* ####################### CONFIGURAÇÃO DOS SUBTÓPICOS ##################### */
+.circulo {
+    margin-right: 2em;
+}
+
+.barra-sub {
+    /* margin-left: 53px; */
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Subtopico {
+    color: var(--CorSubtopico);
+    margin: 30px 0;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 20px;
+}
+
+.subsubtopico {
+    color: var(--CorSubSubtopico);
+    font-size: 25px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 10px;
+    margin: 20px 0;
+}
+
+.dropdown-menu {
+    background-color: var(--color-green);
+    color: white;
+    transition: 0.5s;
+    width: 80%;
+    margin-right: -2rem !important;
+    margin-left: 2rem !important;
+    position: fixed;
+}
+
+.dropdown-btn {
+    text-decoration: none;
+    color: #44833D;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.dropdown-container a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #44833D;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+/* hover dos subtópicos */
+.dropdown-btn .menu:hover {
+    color: white;
+}
+
+.dropdown-container a:hover {
+    color: white;
+    background-color: #1a9c60;
+    height: auto;
+}
+
+/* hover dos subtópicos end */
+
+
+/* configuração do modo escuro - subtópicos */
+[data-theme="dark"] .Subtopico {
+    color: white;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--color-ciano);
+}
+
+[data-theme="dark"] .dropdown-toggle {
+    color: white;
+}
+
+[data-theme="dark"] .dropdown-toggle:hover {
+    color: rgb(192, 185, 185);
+}
+
+[data-theme="dark"] .dropdown-container a {
+    color: white;
+}
+
+[data-theme="dark"] .dropdown-container a:hover {
+    background-color: #3be3e2;
+    color: #040504;
+}
+
+/* configuração do modo escuro - subtópicos */
+
+/* ####################### CONFIGURAÇÃO DOS SUBTÓPICOS END ##################### */
+
+
+
+/* ESTILO DO MENU RESPONSIVO */
+
+/*  MEDIA QUERY  */
+/* #text-left2 {
+       border-top: 1px solid black;
+       border-bottom: 1px solid black;
+    } */
+
+
+@media (min-width: 735px) {
+
+    .offcanvas.hiding,
+    .offcanvas.show,
+    .offcanvas.showing {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 735px) {
+    .menulateral {
+        display: none;
+        color: rgb(39, 79, 35);
+    }
+
+    ul li.menu a.ativo {
+        border-right: 6px solid #44833D;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    #img_logo {
+        width: 150px;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+@media (max-width: 386px) {
+    #moodle {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+@media screen {
+    @media(max-width: 400px) {
+        ul li.menu a .txt {
+            margin-left: 0.5rem;
+        }
+
+        ul li.menu a .txt {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+/*  MEDIA QUERY END */
+
+/* menu lateral responsivo */
+.offcanvas {
+    max-width: 70%;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    background-color: var(--CormenuLateral);
+}
+
+/* LOGO EGP RESPONSIVO */
+.offcanvas-header a>img {
+    position: relative;
+    left: 2em;
+}
+
+/* ESTILO BOTÃO FECHAR */
+.offcanvas-header>.btn-close {
+    position: relative;
+    bottom: 30%;
+    color: #198754 !important;
+}
+
+/* MENU LATERAL RESPONSIVO CONTEÚDO */
+.offcanvas-body>.menulateral-responsivo>ul {
+    width: 111% !important;
+    padding-left: 1px !important;
+    margin-left: 0 !important;
+    position: relative;
+    right: 6%;
+}
+
+.offcanvas-body {
+    overflow-x: hidden;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.offcanvas-body::-webkit-scrollbar-track {
+    background: #EFF7F0;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+}
+
+/* COR DO MENU RESPONSIVO - MODO ESCURO */
+[data-theme="dark"] .offcanvas-body {
+    background-color: var(--color-dark-900);
+}
+
+[data-theme="dark"] .offcanvas-header {
+    background-color: var(--color-dark-900);
+}
+
+[data-theme="dark"] #btn_menu .fa-solid {
+    color: var(--color-light-50);
+}
+
+#btn_menu .fa-solid {
+    color: #274f23;
+}
+
+/* BOTÃO CLOSE MENU RESPONSIVO - MODO ESCURO (Audi)*/
+[data-theme="dark"] #close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* COR DO MENU RESPONSIVO - MODO ESCURO END */
+
+/* ESTILO DO MENU RESPONSIVO END */
+/* ############################################ MENU LATERAL END ########################################################## */
+
+
+.nonedec {
+    text-decoration: none;
+    color: #b0b0b1;
+    margin-left: 10px;
+}
+
+[data-theme="dark"] .nonedec:hover {
+    color: #98989b;
+}
+
+
+/* estilo do container de apresentação */
+
+/* @media screen {
+    @media(min-width:1000px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+} */
+
+/* ######################################### INÍCIO DAS CONFIGURÇÕES DO CONTEÚDO DA PÁGINA ################################################### */
+
+/* ------ CONFIGURÇÃO DOS TEXTOS ------- */
+/* Título Pricipal */
+h2 {
+    margin-left: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #44833D;
+    font-weight: bolder;
+}
+
+.iconTitulo {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* modo escuro do título principal */
+[data-theme="dark"] h2,
+.Titulo {
+    color: var(--color-light-50);
+}
+
+/* modo escuro do título principal */
+
+h2,
+.Titulo {
+    color: var(--color-green);
+}
+
+/* Título Pricipal End*/
+
+/* links */
+a {
+    text-decoration: none;
+    color: #4a71f1;
+}
+
+/* links end */
+
+.Texto {
+    cursor: default;
+    transition: 0.3s;
+}
+
+.Texto:hover {
+    margin-left: 10px;
+}
+
+.text-center .text {
+    color: #b0b0b1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* negrito dos textos*/
+strong {
+    font-weight: 300;
+}
+
+/* negrito dos textos*/
+
+/* texto sobre as imagens do freepik */
+#text-freepik {
+    margin-top: -25px;
+    margin-left: 6rem;
+}
+
+/* DESTACANDO UMA FRASE */
+.li_interativo {
+    background-color: #1989f1;
+    color: #ffff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    /* margin-right: 2rem; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+}
+
+/* clique para mais informações */
+.li_interativo2 {
+    background-color: #1989f1;
+    color: #ffff;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 2px;
+    margin-right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* DESTACANDO UMA FRASE END*/
+
+/* TOOLTIP  */
+
+a.link_tooltip {
+    text-decoration: underline 3px #008442;
+    color: #008442;
+    font-weight: 300;
+}
+
+a.link_tooltip_white {
+    text-decoration: underline 3px #ffff;
+    color: #ffff;
+    font-weight: 300;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #008442;
+    --bs-tooltip-color: white;
+    font-weight: 200;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* modo escuro - textos */
+[data-theme="dark"] h5 {
+    color: white;
+}
+
+[data-theme="dark"] #txt_final {
+    color: var(--color-light-50);
+}
+
+#txt_final {
+    color: black;
+}
+
+[data-theme="dark"] p {
+    color: var(--color-light-50);
+}
+/* modo escuro - textos end */
+/* ------ CONFIGURÇÃO DOS TEXTOS END ------- */
+
+/* ------------------ CARD DE TEXTO COM IMAGEM ------------------ */
+.conteudo-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+    border: none;
+    background-color: #1989f1;
+}
+
+/* .card:hover {
+    background-color: #1989f1;
+} */
+
+.card .img {
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: white;
+    background-image: url("/modulo01/imgs/Group\ 12.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    position: relative;
+}
+
+.card .img2 {
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url("/modulo01/imgs/Group\ 13.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    position: relative;
+    background-color: white;
+}
+
+
+.card:hover .img {
+    width: 500px;
+}
+
+.card:hover .img2 {
+    width: 500px;
+}
+
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card.active .content {
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card.active .content::before {
+    visibility: hidden;
+}
+
+/* .active{
+    visibility: hidden; 
+    height: auto;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.card .content .desc {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 8px;
+    color: white;
+}
+
+.card .arrow {
+    transform: rotate(-180deg);
+    transition: all .5s;
+    /* display: flex;
+    align-items: center; */
+    font-size: 28px;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .text-fixo-card {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: #183ebd;
+    width: 100%;
+}
+
+/* RESPONSIVIDADE DOS CARDS */
+
+/* @media (max-width: 835px) {
+    .conteudo-card * {
+        visibility: visible;
+    }
+
+    .card:hover .content * {
+        visibility: visible;
+    }
+
+    #informacao-card {
+        display: none;
+    }
+
+    .card .content .desc {
+        display: block;
+    }
+} */
+
+/* ------------------ CARD DE TEXTO COM IMAGEM END ------------------ */
+
+
+hr {
+    margin-left: 5px;
+}
+
+/*  ------- LISTA NÃO ORDENADA NO CONTEÚDO ------- */
+.list li {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/*  ------- LISTA NÃO ORDENADA NO CONTEÚDO END ------- */
+
+
+/* ------- CONTEÚDO PRINCIPAL ------- */
+.main-content {
+    padding: 100px 50px 50px;
+}
+
+.main-content p {
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: 200 !important;
+}
+
+.main-content .FonteMenor {
+    font-size: 0.9rem;
+    font-family: var(--FonteArial);
+    margin-top: 0.2rem;
+}
+
+.main-content>#FonteFigura p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: -100px;
+}
+
+/* ------- CONTEÚDO PRINCIPAL END ------- */
+
+
+/* ################### BOTÕES COM CONTEÚDO ######################## */
+/* BOTÕES VIDA PESSOAL E PROFISSIONAL */
+.CorVerdeEstado {
+    background-color: rgb(39, 156, 61);
+    color: white
+}
+
+.CorVerdeEstado:hover {
+    background-color: rgb(39, 156, 61);
+    color: white;
+}
+
+#buton-t3 i {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 13rem;
+    height: 2.7rem;
+    font-size: 20px;
+}
+
+/* BOTÕES DO PESSOAL E PROFISSIONAL END */
+
+/* BOTÃO LER MAIS */
+#buton-lerMais {
+    width: 21rem;
+    height: 2.7rem;
+    font-size: 1.1rem;
+    background-color: #e94f0e;
+    align-items: center;
+}
+
+#buton-lerMais i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+#conteudo-LerMais {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.7em;
+}
+
+#buton-lerMais2 {
+    background-color: #e94f0e;
+    color: white;
+    width: 21rem;
+    height: 2.7rem;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+#buton-lerMais2 i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* BOTÃO LER MAIS END */
+/* ################### BOTÕES COM CONTEÚDO END ######################## */
+
+
+/* ############ INÍCIO DO ESTILO DO ACCORDION  ##################### */
+
+/* ACOORDION DA APRESENTAÇÃO */
+#accordion-item-apresentacao {
+    background-image: linear-gradient(to right, #2db39e, #26a737);
+    border: none;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    /* border-color: #dc3545; */
+    box-shadow: 0 0 0 0.05rem #008442;
+}
+
+#accordion-botao-apresentacao {
+    background-image: linear-gradient(to right, #2db39e, #26a737);
+}
+
+.accordion-body01 {
+    background-image: linear-gradient(to right, #2db39e, #26a737);
+    color: #fff;
+    font-size: 1.3em;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* ACCORDION DA APRESENTAÇÃO END */
+
+.container {
+    min-height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+section {
+    padding: 0 !important;
+}
+
+.accordion {
+    width: 100%;
+    margin: 2rem 0;
+    /*define o tamanho do acordeon*/
+    /* margin: 40px 10px 0px 10px; */
+    /*coloquei o top só para tirar lá de cima e nas laterais para no reponsivo não grudar na tela*/
+}
+
+.accordion #content .caixaprincipal {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    /*linha de baixo da caixa principal*/
+    font-size: 1.4em;
+    padding-left: 1rem;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.div_teste {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-aviso {
+    display: block;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Inicialmente, oculta .txt-caixasecundaria */
+.accordion-content .txt-caixasecundaria {
+    display: none;
+}
+
+/* CORES DOS DIFERENTES DOS ACCORDIONS */
+
+/* CAIXA IMPORTANTE */
+.accordion #content .caixaprincipal#tituloimportante {
+    background-color: #f18519;
+    /*cor da caixa principal importante*/
+    color: #fffffee0;
+    /*cor da palavra na caixa principal*/
+}
+
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloimportante {
+    background-color: var(--RoxoEscuroImportante);
+    color: var(--color-light-50);
+}
+
+[data-theme="dark"] #importante {
+    background-color: var(--RoxoClaroImportante);
+    color: black;
+}
+
+[data-theme="dark"] #importante p {
+    color: #040504;
+}
+
+#importante {
+    background-color: #edb00929;
+}
+
+/* CAIXA IMPORTANTE END */
+
+/* CAIXA DÚVIDA */
+.accordion #content .caixaprincipal#tituloDuvida {
+    background-color: #008080;
+    color: #feffffe0;
+}
+
+#duvida {
+    background-color: #bee2e2;
+}
+
+#duvida p {
+    color: #040504;
+}
+
+/* CAIXA DÚVIDA END */
+
+/* CAIXA FIQUE ATENTO */
+.accordion #content .caixaprincipal#titulofiqueatento {
+    background-color: #edb009;
+    /*cor da caixa principal fique atento*/
+    color: #ffffffe0;
+}
+
+[data-theme="dark"] .accordion #content .caixaprincipal#titulofiqueatento {
+    background-color: var(--VermelhoEscuroFiqueAtento);
+    color: var(--color-light-50);
+}
+
+[data-theme="dark"] #fiqueatento {
+    background-color: var(--VermelhoClaroFiqueAtento);
+    /*cor da caixa secundaria fique atento */
+}
+
+[data-theme="dark"] #fiqueatento p {
+    color: #040504;
+}
+
+#fiqueatento {
+    background-color: #edb00929;
+}
+
+/* CAIXA FIQUE ATENTO END*/
+
+/* CAIXA REFLITA */
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloreflita {
+    background-color: var(--VerdeEscuroReflita);
+    color: var(--color-light-50);
+}
+
+.accordion #content .caixaprincipal#tituloreflita {
+    background-color: #3be3e2;
+    /*cor da caixa principal reflita*/
+    color: #feffffe0;
+}
+
+[data-theme="dark"] #reflita {
+    background-color: var(--VerdeClaroReflita);
+    /*cor da caixa secundaria reflita */
+}
+
+[data-theme="dark"] #reflita p {
+    color: #040504;
+}
+
+#reflita {
+    background-color: #3be3e229;
+}
+
+/* CAIXA REFLITA END*/
+
+
+/* CAIXA EXEMPLO */
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloexemplo {
+    background-color: var(--RosaEscuroExemplo);
+    color: var(--color-light-50);
+}
+
+.accordion #content .caixaprincipal#tituloexemplo {
+    background-color: #49d199;
+    /*cor da caixa principal reflita*/
+    color: #ffffffe0;
+}
+
+.accordion-content,
+#exemplo {
+    background-color: #49d19929;
+    /*cor da caixa secundaria importante */
+}
+
+[data-theme="dark"] #exemplo {
+    background-color: var(--RosaClaroExemplo);
+    /*cor da caixa secundaria reflita */
+}
+
+[data-theme="dark"] #exemplo p {
+    color: #040504;
+}
+
+/* CAIXA EXEMPLO END */
+
+
+/* CAIXA SAIBA MAIS */
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloSaibaMais {
+    background-color: var(--AzulEscuroSaibaMais);
+    color: var(--color-light-50);
+}
+
+.accordion #content .caixaprincipal#tituloSaibaMais {
+    background-color: #3be3e2;
+    /*cor da caixa principal reflita*/
+    color: #ffffffe0;
+}
+
+[data-theme="dark"] #saibamais {
+    background-color: var(--AzulClaroSaibaMais);
+}
+
+#saibamais {
+    background-color: #d8f6fa;
+    /*cor da caixa secundaria importante */
+}
+
+.accordion #content .caixaprincipal#tituloexemplo {
+    background-color: #49d199;
+    /*cor da caixa principal reflita*/
+    color: #ffffffdc;
+}
+
+[data-theme="dark"] #saibamais {
+    background-color: var(--AzulClaroSaibaMais);
+    /*cor da caixa secundaria reflita */
+}
+
+[data-theme="dark"] #saibamais p {
+    color: #040504;
+}
+
+/* CAIXA SAIBA MAIS END */
+
+
+/* CAIXA CURIOSIDADES */
+.accordion #content .caixaprincipal#tituloCuriosidade {
+    background-color: #a042e5;
+    /*cor da caixa principal curiosidade*/
+    color: #fffffff6;
+    /*cor da palavra na caixa principal*/
+}
+
+#Curiosidade p {
+    color: black;
+    /*cor da caixa secundaria curiosidade */
+}
+
+#Curiosidade {
+    background-color: #a02bf529;
+    /*cor da caixa secundaria curiosidade */
+}
+
+[data-theme="dark"] .accordion #content .caixaprincipal#tituloCuriosidade {
+    background-color: #33beaa;
+}
+
+[data-theme="dark"] #Curiosidade {
+    background-color: #ade7df;
+}
+
+/* estilo do pointer dos accordion */
+
+.accordion-content {
+    /* Separei os paddings laterais para não gerar estranheza nas transições */
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ff7f0033;
+    border: none;
+    /*linha de baixo da caixa principal*/
+    margin-bottom: 0;
+    border-radius: 0px 0px 7px 7px;
+
+    /* Para esse tipo de transição suave, é melhor usar height do que display,
+  porém não sei pq diabos o height não funcionou direito com o atributo visibility
+  então usei max-height e deu basicamente num resultado melhor*/
+    /* max-height: 0; */
+    /* Defini que atributos deveriam ser alterados mais suavemente 
+  (note que especifiquei os paddings verticais, novamente para não chegar um efeito estranho) */
+    transition: height 0.5s, max-height 0.5s, padding-bottom 0.5s, padding-top 0.5s;
+}
+
+/* .accordion-content>p {
+    font-size: 10px;
+} */
+
+.accordion-content * {
+    /* isso aqui foi importante colocar pq, como não estou display,
+o estado inicial de height 0 manteria o texto aparecendo */
+    /* visibility: hidden; */
+    /* transição aqui para o texto não sumir/aparecer antes da caixa diminuir/aumentar*/
+    transition: 0.1s;
+}
+
+.accordion #content .caixaprincipal:hover~.accordion-content {
+    /* 
+  novamente: não tenho ideia pq não funcionou direito com o
+  height, mas normalmente você colocaria height 0 ao invés de max-height 0
+  e height auto aqui, no lugar de max-height 1000
+  🤨🤨🤨
+
+  não precisa necessariamente ser 1000, qualquer número quando o suficiente para
+  não limitar o tamanho que você quer já está otimo
+  */
+    max-height: 1000px;
+
+    /* esse padding aqui poderia ser substituido por padding-bottom 20 e padding-top 20, porem assim fica com menos uma linha*/
+    padding: 20px;
+
+}
+
+.accordion #content .caixaprincipal:hover~.accordion-content * {
+    visibility: visible;
+    /* font-size: 20px; */
+}
+
+/* Quando hover na .caixaprincipal, exibe .txt-aviso e oculta .txt-caixasecundaria */
+.accordion #content .caixaprincipal:hover~.accordion-content .txt-aviso {
+    display: none;
+}
+
+/* Quando hover na .caixaprincipal, exibe .txt-caixasecundaria e oculta .txt-aviso */
+.accordion #content .caixaprincipal:hover~.accordion-content .txt-caixasecundaria {
+    display: block;
+}
+
+/* Para quando hover no accordion-content tbm ocorrer a transição */
+.accordion-content:hover .txt-caixasecundaria {
+    display: block;
+}
+
+.accordion-content:hover .txt-aviso {
+    display: none;
+}
+
+.accordion-content:hover {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+
+@media (max-width: 735px) {
+    .accordion-content * {
+        visibility: visible;
+    }
+
+    .accordion-content {
+        max-height: none;
+        padding: 20px;
+        visibility: visible;
+        transition: none;
+    }
+
+    .accordion a:hover~.accordion-content * {
+        visibility: visible;
+    }
+
+    .txt-aviso {
+        display: none;
+    }
+
+    .accordion-content .txt-caixasecundaria {
+        display: block;
+    }
+
+    #icon-pointer {
+        display: none;
+    }
+
+    ul li.menu a .txt {
+        margin-left: 0.5rem;
+    }
+}
+
+/* ################################# FIM DO ESTILO DO ACCORDION  ################################# */
+
+
+/*------ ESTILO DA TABELA ------ */
+.table {
+    font-size: 1.2rem;
+}
+td{
+    word-wrap: break-word;
+}
+
+/*------ ESTILO DA TABELA END ------ */
+
+/* estilo da pagina do primeiro modulo */
+.bd-callout {
+    border: 1px solid #cccccc9a;
+    border-left: 5px solid #44833D;
+    border-radius: 7px;
+    padding: 1.5rem;
+    background-color: #eff7f0;
+}
+
+[data-theme="dark"] .bd-callout {
+    background-color: rgba(255, 255, 255, 0);
+}
+/* ################## INÍCIO DO BOTÃO DO MODO ESCURO ################## */
+#btn_tema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--color-ciano);
+    color: var(--color-light-50);
+    border-radius: 8px;
+    width: 135px;
+    height: 34px;
+    cursor: pointer;
+    box-shadow: 0px 4px 0px var(--color-ciano2);
+    transition: all 75ms ease-in-out;
+    margin-top: -3px;
+    border: none;
+}
+
+#btn_tema:active {
+    transform: translateY(0.6px);
+    box-shadow: 0px 0px 0px var(--color-ciano2);
+}
+
+/* CORES MODO CLARO/ESCURO  */
+[data-theme="dark"] {
+    --white: #29292B;
+    --black: #fff;
+}
+
+/* CORES MODO CLARO/ESCURO END */
+
+/* ################## INÍCIO DO BOTÃO DO MODO ESCURO END ################## */
+
+
+
+/*CONFIGURAÇÃO DE ALGUNS ELEMENTOS NO MODO ESCURO */
+[data-theme="dark"] .none {
+    color: var(--color-light-50);
+}
+
+.none {
+    color: #040504;
+}
+
+[data-theme="dark"] .none1 {
+    color: var(--color-light-50);
+}
+
+.none1 {
+    color: #040504;
+}
+
+[data-theme="dark"] #txt_referencias {
+    color: var(--color-light-50);
+}
+
+/*FIM DA CONFIGURAÇÃO DO MODO ESCURO*/
+
+/*---------- EFEITO DE ZOOM NA IMAGEM ADAPTADO (AUDI) ------*/
+.zoom {
+    overflow: hidden;
+    max-width: 550px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zoom img {
+    max-width: 100%;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    /* border: 1px solid rgb(238, 238, 238); */
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+/* IMAGEM E TEXTOS JUNTOS */
+#img-center {
+    padding-top: 1rem;
+}
+#img-right {
+    /* margin-left: 5rem; */
+}
+
+#text-left {
+    margin-top: 3em;
+}
+#text-center {
+    text-align: center;
+}
+.passos{
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+/* IMAGEM E TEXTOS JUNTOS END */
+
+/*---------- EFEITO DE ZOOM NA IMAGEM ADAPTADO (AUDI) END ------*/
+
+/* IFRAME NO SITE  */
+@media (min-width:1260px) {
+    .video {
+        background-color: rgb(14, 149, 129);
+        padding: 20px;
+        border-radius: 0 50px 0 50px;
+        margin: 4em 0;
+        min-height: 450px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    iframe {
+        float: left;
+        margin: 1em;
+    }
+
+    .titulo_video {
+        color: white;
+        font-size: 2.5rem;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        /* border-radius: 30px; */
+    }
+
+    .descricao {
+        margin: 0 3em;
+    }
+}
+
+.descricao p {
+    font-weight: 300 !important;
+    color: #ffff;
+    margin-top: 2px;
+}
+
+@media (max-width:1260px) {
+    iframe {
+        width: 90%;
+        height: 200px auto;
+        margin: 0.5em;
+    }
+
+    .video {
+        background-color: rgb(14, 149, 129);
+        padding: 20px;
+        border-radius: 0 50px 0 50px;
+        margin: 2em 0;
+    }
+
+    .titulo_video {
+        color: white;
+        font-size: 2.5rem;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        /* border-radius: 30px; */
+    }
+
+    /* .descricao {
+        margin: 0 3em;
+    } */
+}
+
+/* IFRAME NO SITE END */
+
+/* @media (max-width:1050px) {
+    .botoes-informativo{
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+/* IMAGEM E TEXTO NO TÓPICO APRESENTAÇÃO */
+.texto_apresentacao {
+    background-color: orange;
+    border-radius: 100px 100px 0 100px;
+    padding: 40px;
+    margin-top: 1rem;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.texto_apresentacao_lista {
+    background-color: #1ab6b6;
+    border-radius: 100px 100px 100px 0;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    margin-top: 3rem;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.texto_apresentacao_lista i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.texto_apresentacao2 {
+    background-color: orange;
+    border-radius: 100px 100px 100px 0;
+    padding: 20px;
+    margin-top: 1rem;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+[data-theme="dark"] .texto_apresentacao {
+    color: black;
+}
+
+@media (min-width:1400px) {
+    .apresentacao {
+        display: grid;
+        grid-template-columns: 50% 40%;
+    }
+    #apresentacao01{
+        top: 50%;
+    }
+    .img_apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25%;
+    }
+
+    .img_apresentacao img {
+        margin-bottom: 2rem;
+        width: 130%;
+        height: auto;
+    }
+    h2#objetivos {
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    h2.ti{
+        color: #999;
+    }
+}
+[data-theme="dark"] .ti {
+    color: rgb(255, 255, 255);
+}
+@media (max-width:1400px) {
+    .img_apresentacao {
+        display: none;
+    }
+    h2#objetivos {
+        border-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    h2.ti{
+        color: #999;
+        padding-bottom: 1rem;
+    }
+    .passos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #img-right{
+        margin-left: 0rem;
+    }
+    td{
+        
+    }
+}
+
+/* IMAGEM E TEXTO NO TÓPICO APRESENTAÇÃO END*/
+
+
+/*-------- INÍCIO DO BUTTON BACK TO TOP (JAMILLE) --------*/
+#back_to_top {
+    position: fixed;
+    z-index: 2;
+    color: black;
+    bottom: 40px;
+    right: 30px;
+    height: 48px;
+    width: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .4s all;
+}
+
+#btn_back {
+    display: block;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* efeito ao clicar no botão back to top */
+#back_to_top #btn_back #icon_up:hover {
+    transform: translateY(-3px);
+}
+
+/* ------- FIM DO BUTTON BACK TO TOP -------- */
+
+/* BARRA DE PROGRESSO  */
+#progress-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    background: linear-gradient(#03cc65 0%, #03cc65 100%);
+    transition: width 0.5s ease-out;
+    z-index: 5;
+}
+
+
+/* ------- FOOTER ---------*/
+.footer {
+    margin-bottom: 5px;
+}
+
+/* ------- FOOTER END ---------*/
+
+/* ######################################### FIM DAS CONFIGURÇÕES DO CONTEÚDO DA PÁGINA ################################################### */

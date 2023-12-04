@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/games.css">
+
+  <script src="js/games.js" defer></script>
+  <script src="js/questions.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+  <title>Modelo de Recursos Games</title>
+</head>
+
+<body>
+
+  <!-- ######################################### GAME QUIZ ######################################## -->
+  <div class="apresentacao">
+
+    <div class="img_apresentacao wow animate__zoomIn">
+      <img src="imgs/Group 4.png" alt="">
+    </div>
+    <div>
+      <!-- Parágrafo com a biblioteca de animação  -->
+      <p class="wow fadeIn texto_apresentacao wow animate__zoomIn" data-wow-delay="0.3s">
+        <strong>Olá, Nome_Completo!</strong><br> Clique no botão a seguir e teste seus conhecimentos.
+      </p><br>
+
+      <!-- Caixa de informações -->
+      <div id="divTransparente2" class="escondida"></div>
+
+      <!-- começo do Quiz botao -->
+      <div class="start_btn wow animate__bounceInLeft" data-wow-delay="0.4s"><button id="openModalBtn"><i
+            class="icone fa-solid fa-puzzle-piece"></i>TESTE SEUS
+          CONHECIMENTOS</button></div>
+
+      <div class="center">
+        <div class="info_box">
+          <div class="info-title"><span><i class="icone fa-solid fa-pen-clip"></i>Regras do
+              QUIZ</span></div>
+          <div class="info-list">
+            <div class="info">1. Depois que você selecionar a respota, não poderá ser desfeito.
+            </div>
+            <div class="info">2. Você não pode sair durante o quiz.</div>
+            <div class="info">3. Você vai receber a pontuação conforme responde as questões.
+            </div>
+            <div class="info">4. Esse quiz não vai interferir na sua nota final.</div>
+          </div>
+          <div class="buttons">
+            <button class="quit">Sair</button>
+            <button class="restart">Continuar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- caixa do quiz -->
+      <div class="center">
+        <div class="quiz_box">
+          <header>
+            <div class="title"><i class="fa-solid fa-puzzle-piece icone"></i>QUIZ</div>
+            <div class="time_line"></div>
+          </header>
+          <section>
+            <div class="que_text">
+              <!-- Aqui é inserido o quiz do javascript -->
+            </div>
+            <div class="option_list">
+              <!-- Aqui é inserido as opções do JavaScript -->
+            </div>
+          </section>
+
+          <!-- footer do quiz -->
+          <footer>
+            <div class="total_que">
+              <!-- aqui está inserido o número de questões do js -->
+            </div>
+            <button class="next_btn">Próximo</button>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="center">
+        <div class="result_box">
+          <div class="img">
+            <!-- <i class="fa-solid fa-puzzle-piece"></i> -->
+          </div>
+          <div class="complete_text">Você completou o quiz!</div>
+          <div class="score_text">
+            <!-- Aqui é inserido o resultado -->
+          </div>
+          <div class="buttons">
+            <button class="restart">Tentar novamente</button>
+            <button class="quit">Fechar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do Quiz -->
+
+    </div>
+  </div><br><br>
+  <!-- ######################################### GAME QUIZ  END ######################################## -->
+
+  <!-- ######################################### GAME EMBARALHAR PALAVRAS ######################################## -->
+
+  <div class="apresentacao">
+
+    <div class="img_apresentacao wow animate__zoomIn">
+      <img src="imgs/Group 4.png" alt="">
+    </div>
+    <div>
+      <!-- Parágrafo com a biblioteca de animação  -->
+      <p class="wow fadeIn texto_apresentacao wow animate__zoomIn" data-wow-delay="0.3s">
+        <strong>Olá, Nome_Completo!</strong><br> Clique no botão a seguir e teste seus conhecimentos.
+      </p><br>
+
+      <!-- começo do Quiz botao -->
+      <div class="start_btn wow animate__bounceInLeft" data-wow-delay="0.4s"><button
+          data-bs-target="#exampleModalToggle" id="btn-game" data-bs-toggle="modal"><i
+            class="icone fa-solid fa-puzzle-piece"></i>TESTE SEUS
+          CONHECIMENTOS</button></div>
+
+      <!-- ######################################## GAME DE EMBARALHAR PALAVRAS ##################################### -->
+      <div id="game" class="wow fadeIn" data-wow-delay="0.3s">
+        <!-- MODAL 1 - INSTRUÇÕES DO JOGO -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel"><i class="fa-solid fa-pen-clip"></i>
+                  Instruções do
+                  Teste</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fw-normal" id="instrucoes">
+
+                1. Você deverá descobrir qual é a palavraque está embaralhada;<br><br>
+                2. Haverá uma dica para lhe auxiliar;<br><br>
+                3. Ao concluir clique em confirmar;<br><br>
+                4. Este teste não influenciará na avaliação final.<br><br>
+
+              </div>
+              <div class="modal-footer">
+                <button class="btn" id="btn-game" data-bs-target="#exampleModalToggle2"
+                  data-bs-toggle="modal">Continuar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL 2 - INÍCIO DO JOGO -->
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1" data-bs-keyboard="false">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel2"><i class="fa-solid fa-gamepad"></i>
+                  Palavra
+                  Embaralhada</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="content">
+                  <div class="word"></div>
+                  <div class="details">
+                    <div class="hint"> <span></span></div>
+                  </div>
+
+                  <input type="text" spellcheck="false" placeholder="Escreva a palavra" id="palavras-respostas">
+
+                  <div class="buttons">
+                    <button class="btn-game" id="refresh-word">Embaralhar</button>
+                    <button class="btn-game" id="check-word">Confirmar</button>
+
+                    <div id="divTransparente" class="escondida"></div>
+                    <div id="d2" class="escondida" data-bs-dismiss="modal"></div>
+
+                    <!-- MODAIS DAS RESPOSTAS -->
+                    <!-- MODAL QUANDO A CAIXA DE RESPOSTA ESTIVER VAZIA -->
+                    <div id="modal-js">
+                      <dialog class="modal01">
+                        <i id="close01" class="bi bi-x"></i>
+                        <div class="text-center">
+                          <img src="imgs/opps.png" class="img-fluid"
+                            alt="Imagem indicando que a caixa de resposta está vazia.">
+                        </div>
+                      </dialog>
+                    </div>
+
+                    <!-- MODAL QUANDO A RESPOSTA ESTIVER CORRETA -->
+                    <div id="modal-js">
+                      <dialog class="modal02">
+                        <i id="close02" class="bi bi-x" data-bs-dismiss="modal"></i>
+                        <div class="text-center">
+                          <img src="imgs/parabens.png" class="img-fluid"
+                            alt="Imagem indicando que você acertou a resposta.">
+                        </div>
+                      </dialog>
+                    </div>
+
+                    <!-- MODAL QUANDO A RESPOSTA ESTIVER ERRADA-->
+                    <div id="modal-js">
+                      <dialog class="modal03">
+                        <i id="close03" class="bi bi-x"></i>
+                        <div class="text-center">
+                          <img src="imgs/que-pena.png" class="img-fluid"
+                            alt="Imagem indicando que você errou a resposta.">
+                        </div>
+                      </dialog>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div> <br><br>
+
+    </div>
+  </div><br>
+
+  <!-- ######################################### GAME EMBARALHAR PALAVRAS END ######################################## -->
+
+
+</body>
+
+</html>

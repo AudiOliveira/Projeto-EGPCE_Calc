@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CDN DO BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- Cdn do bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- link do wow.js -->
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- nosso css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- link do font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- link do script -->
+  <script src="js/script.js" defer></script>
+
+  <!-- link do scroollrevel -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="http://ava.egp.ce.gov.br/2018/desv/logo/favicon.png" />
+
+  <title>EGPCE | Modelo de Recursos</title>
+</head>
+
+<body>
+
+  <!-- NAV  -->
+
+  <!-- coloquei um id pra chamar la no js-->
+  <nav class="navbar shadow-sm" id="navmenu">
+    <div class="container-fluid">
+
+      <!-- RESPONSIVIDADE -->
+
+      <!-- MENU HAMBURGUER -->
+      <button class="btn" id="btn_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fs-2"></i></button>
+      <!-- FIM DO MENU HAMBURGUER -->
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header text-center">
+          <h5 class="offcanvas-title " id="offcanvasScrollingLabel"><img src="imgs/logoEGP2.png" alt="logo"
+              id="img_logo">
+          </h5>
+          <button type="button" class="btn-close" id="close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <!-- CONTEÚDO DO MENU LATERAL RESPONSIVO -->
+          <nav class="menulateral-responsivo">
+            <ul>
+              <li class="menu">
+                <a href="index.html">
+                  <span class="icon space"><i class="bi bi-person-workspace"></i></span>
+                  <span class="txt">Apresentação</span>
+                </a>
+              </li>
+              <li class="menu">
+                <a href="topico01.html">
+                  <span class="icon"><i class="bi bi-1-circle"></i>
+                  </span>
+                  <span class="txt">Gestão de tempo</span>
+                </a>
+              </li>
+
+              <button class="dropdown-btn">
+                <li class="menu">
+                  <a>
+                    <span class="icon space"><i class="bi bi-2-circle"></i></span>
+                    <span class="txt">Poder de decisão<i class="bi bi-caret-down-fill barra-sub"></i></span>
+                  </a>
+                </li>
+              </button>
+              <div class="dropdown-container" id="spy">
+                <a href="topico02.html">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>Inicío</a>
+                <a href="#item1">
+                  <i class="fa-regular fa-pen-to-square circulo"></i>Subtópico</a>
+
+              </div>
+
+              <li class="menu">
+                <a href="topico03.html">
+                  <span class="icon"><i class="bi bi-3-circle"></i></span>
+                  <span class="txt">Planejamento de Metas</span>
+                </a>
+              </li>
+              <li class="menu">
+                <a href="referencias.html">
+                  <span class="icon"><i class="bi bi-book-half"></i></span>
+                  <span class="txt">Referências</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- FIM DO MENU RESPONSIVO -->
+
+      <!-- CONTEÚDO DA NAV -->
+
+      <a class="navbar-brand"></a>
+      <form class="form" role="search">
+        <a class="nav-link active nonedec me-3" aria-current="page" href="#">Nome_Completo</a>
+
+        <button type="button" class="btn btn-outline-success" id="moodle">Ir para o Moodle</button>
+
+        <!-- FIM DO CONTEUDO DA NAV  -->
+
+        <!--BOTÃO MODO ESCURO-->
+        <button type="button" id="btn_tema">
+          <div id="icone"></div>
+          <div id="txtBtn"> Mudar Tema</div>
+        </button>
+        <!-- BOTÃO MODO ESCURO -->
+
+      </form>
+    </div>
+  </nav>
+  <!-- FIM DA NAV -->
+
+  <!-- comecar assim  -->
+
+  <!-- CONTEUDO INICIO -->
+  <div class="all-conteudo">
+    <section class="conteiner-principal">
+      <div class="main-content container-fluid">
+        <div class="row">
+          <!-- Begin row -->
+          <div class="col-md-1"></div>
+          <div class="col-md-10 col-sm-8 container-fluid">
+
+            <!-- ... -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FIM DO CONTEUDO INICIO  -->
+
+  <!-- IMAGEM NO SITE  -->
+
+  <div class="text-center img-01">
+    <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 1:</strong>
+      Descrição de cima</p>
+    <div class="zoom">
+      <a href="..." data-bs-toggle="modal" data-bs-target="#Imagem1">
+        <img src="..." alt="Imagem que remete a organização" id="img-1">
+      </a>
+    </div>
+    <p class="FonteFigura FonteMenor text-secondary"><strong>Fonte:</strong>descrição</p>
+  </div>
+
+  <!-- Imagem - MODAL-->
+  <div class="modal fade text-center" id="Imagem1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg d-flex justify-content-center flex-column">
+      <div class="modal-content w-75">
+        <img class="img-fluid" src="..." alt="Alt da imagem fica aqui">
+      </div>
+      <div class="modal-footer w-75 bg-light justify-content-center">
+        <p class="text-secondary"><strong>Fonte:</strong>descrição</p>
+      </div>
+    </div>
+  </div>
+  <!-- Imagem - End-->
+
+  <!-- FIM DA IMAGEM NO SITE  -->
+
+  <!--  Título Pricipal -->
+  <h2 class="Titulo fw-bolder">Apresentação</h2><br>
+  <!--  Título Principal -->
+
+  <!-- subtopico -->
+  <h3 class="Subtopico fw-bolder">Subtópico</h3>
+  <!-- subtopico -->
+
+  <!-- Subsubtopico  -->
+  <h2 class="subsubtopico fw-bolder">Subsubtopico</h2>
+  <!-- fim do subsubtopico  -->
+
+  <!-- Parágrafo com a biblioteca de animação  -->
+  <p class="scrool">
+  </p>
+  <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+  <!-- lista ordenada  -->
+  <ol class="scrool" id="txt_final">
+    <li>Visibilidade de qual estado estamos no sistema (Visibility of system
+      status)</li>
+  </ol>
+  <!-- fim da lista ordenada  -->
+
+  <!-- lista  -->
+
+  <ul class="list">
+    <li class="img-fluid wow fadeInLeft" data-wow-delay="0.3s"><i class="fa fa-dot-circle text-success"></i>
+      Entender o que é usabilidade;
+    </li>
+  </ul>
+
+  <!-- fim da lista  -->
+
+  <!-- Citação com borda verde (esquerda) -->
+  <div class="bd-callout bd-callout-success m-3">
+
+    <!-- blockquote do bootstrap -->
+    <figure>
+      <blockquote class="blockquote">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem distinctio quasi qui. Minima
+          quas
+          sapiente consectetur nesciunt praesentium odit, aliquam at. Culpa provident, modi libero autem ullam
+          doloremque voluptas obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo
+          ratione
+          nihil, nam minima architecto, totam blanditiis nulla, incidunt consequatur obcaecati magni? Placeat
+          explicabo
+          sit ducimus quia ullam voluptatem porro!</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">NOME DO AUTOR DA CITAÇÃO</cite>
+      </figcaption>
+    </figure>
+  </div>
+  <!-- Citação com borda verde (esquerda) -->
+
+  <!-- Citação com borda verde (esquerda) -->
+  <div class="bd-callout bd-callout-success m-4">
+    <p>
+      “Ser produtivo vem de um estado mental focado. Isso inclui apenas o foco no presente e a
+      concentração nas etapas necessárias para alcançar seus objetivos. Para fazer isso, você precisa
+      aprender a eliminar as distrações ao seu redor”. Por sua vez, a identificação das distrações é
+      possível depois que você determina suas prioridades. “Se você não prioriza, pode acabar tendo muitos
+      objetivos, deixando muito pouco tempo para se dedicar a cada um deles”
+    <p class="text-end">LAWRENCE,
+      2019, p.25</p>
+    </p>
+  </div>
+  <!-- fim Citação com borda verde (esquerda) -->
+
+
+  <!-- Iframe - video -->
+  <div class="container iframe-container">
+    <!-- link iframe aqui! -->
+  </div>
+  <!-- fim do iframe -->
+
+  <!-- CAIXAS DE TEXTO -->
+
+  <!-- CAIXA DE TEXTO IMPORTANTE -->
+  <section class="container">
+    <div class="accordion">
+      <section id="content">
+        <div class="caixaprincipal" id="tituloimportante">
+          <div class="div_teste">
+            <div><i class="bi bi-exclamation-circle"></i> IMPORTANTE </div>
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="importante">
+          <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
+          <p class="txt-caixasecundaria">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            repellendus cupiditate praesentium, ad modi exercitationem ratione hic consectetur minima est
+            placeat possimus qui quia mollitia doloremque odit ipsa odio iste!</p> <!--caixa secundaria-->
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- FIM DA CAIXA IMPORTANTE -->
+
+  <!-- CAIXA DE TEXTO DÚVIDA -->
+  <section class="container scrool">
+    <div class="accordion ">
+      <section id="content">
+        <div class="caixaprincipal" id="tituloDuvida">
+          <div class="div_teste">
+            <div><i class="fa-solid fa-question"></i> DÚVIDA </div>
+
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="duvida">
+          <p class="txt-aviso"><strong class="opacity-75"><strong class="opacity-75">
+                Passe o mouse acima
+              </strong></strong></p>
+          <p class="txt-caixasecundaria">O que é uma Metodologia de Gerenciamento de
+            Projetos (MGP)?.</p><!--caixa secundaria-->
+        </div>
+      </section>
+  </section>
+  <!-- FIM DA CAIXA DÚVIDA  -->
+
+  <!-- CAIXA DE TEXTO FIQUE-ATENTO -->
+  <section class="container">
+    <div class="accordion ">
+      <section id="content">
+        <div class="caixaprincipal" id="titulofiqueatento">
+          <div class="div_teste">
+            <div><i class="fa-solid fa-person-circle-exclamation"></i> FIQUE ATENTO </div>
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="fiqueatento"><!--caixa secundaria-->
+          <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
+          <p class="txt-caixasecundaria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel est
+            delectus
+            aliquid soluta quis aliquam quaerat, placeat velit cum iste nesciunt debitis quod. Laboriosam rem
+            earum
+            repudiandae maiores corrupti nam.</p>
+        </div>
+      </section>
+  </section>
+  <!-- FIM DA CAIXA FIQUE ATENTO -->
+
+  <!--CAIXA DE TEXTO REFLITA -->
+  <section class="container">
+    <div class="accordion ">
+      <section id="content">
+        <section id="content">
+          <div class="caixaprincipal" id="tituloreflita">
+            <div class="div_teste">
+              <div> <i class="fa-solid fa-head-side-virus fa-xl me-2"></i>REFLITA</div>
+              <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+            </div>
+          </div> <!--caixa Principal-->
+          <div class="accordion-content" id="reflita">
+            <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
+            <p class="txt-caixasecundaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              assumenda
+              autem repellat molestias omnis modi delectus vero aperiam, harum sed rerum doloribus, error
+              inventore
+              tempora in sequi repellendus distinctio ipsum?</p>
+          </div>
+        </section><!--caixa secundaria-->
+    </div>
+  </section>
+  <!-- FIM DA CAIXA REFLITA-->
+
+  <!--CAIXA DE TEXTO EXEMPLO-->
+  <section class="container">
+    <div class="accordion ">
+      <section id="content">
+        <div class="caixaprincipal" id="tituloexemplo">
+          <div class="div_teste">
+            <div><i class="fa-regular fa-pen-to-square"></i></i> EXEMPLO </div>
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="exemplo"><!--caixa secundaria-->
+          <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
+          <p class="txt-caixasecundaria">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, impedit
+            inventore quos officia ducimus similique laudantium earum architecto ut soluta quam amet cumque rem et
+            quas,
+            necessitatibus odio, placeat deserunt.
+          <p>
+        </div>
+      </section>
+  </section>
+  <!-- FIM DA CAIXA EXEMPLO-->
+
+  <!-- CAIXA DE TEXTO SAIBA-MAIS -->
+  <section class="container">
+    <div class="accordion ">
+      <section id="content">
+        <div class="caixaprincipal" id="tituloSaibaMais">
+          <div class="div_teste">
+            <div><i class="fa-solid fa-plus"></i> SAIBA MAIS </div>
+
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="saibamais">
+          <p class="txt-aviso"><strong class="opacity-75"><strong class="opacity-75"> Passe o mouse acima
+              </strong></strong></p>
+          <p class="txt-caixasecundaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis,
+            suscipit placeat unde labore, delectus aspernatur aperiam recusandae alias beatae laboriosam nemo
+            mollitia,
+            deleniti ea doloremque laborum id sed explicabo.</p><!--caixa secundaria-->
+        </div>
+      </section>
+  </section>
+  <!-- FIM DA CAIXA SAIBA MAIS  -->
+
+  <!-- CAIXA DE TEXTO CURIOSIDADE -->
+  <section class="container">
+    <div class="accordion ">
+      <section id="content">
+        <div class="caixaprincipal" id="tituloCuriosidade">
+          <div class="div_teste">
+            <div><i class="fa-solid fa-question"></i> CURIOSIDADE </div>
+
+            <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
+          </div>
+        </div> <!--caixa Principal-->
+        <div class="accordion-content" id="Curiosidade">
+          <p class="txt-aviso"><strong class="opacity-75"><strong class="opacity-75">
+                Passe o mouse acima
+              </strong></strong></p>
+          <p class="txt-caixasecundaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis autem
+            deserunt, eaque dolorum quos officia quidem nesciunt, officiis aut non voluptas quisquam labore. Totam atque
+            nulla tempore minima a.
+          </p><!--caixa secundaria-->
+        </div>
+      </section>
+  </section>
+  <!-- FIM DA CAIXA DE TEXTO CURIOSIDADE -->
+
+  <!-- FIM DAS CAIXAS DE TEXTO -->
+
+  <!-- COMEÇO REFERÊNCIAS  -->
+
+  <h2 class="Titulo">REFERÊNCIAS</h2>
+
+  <br>
+
+  <p class="Texto"> <i class="bi bi-book me-2"></i>Referencia aqui
+  </p>
+
+  <!-- FIM DAS REFERENCIAS  -->
+
+  <!-- INÍCIO DAS CONFIGURAÇÕES DO BOTÃO BACK TO TOP -->
+
+  <!-- BOTÃO BACK TO TOP COM UMA BARRA DE PROGRESSO -->
+  <div id="back_to_top">
+    <div id="btn_back">
+      <i id="icon_up" class="fa-solid fa-arrow-up"></i>
+    </div>
+  </div>
+  <!-- FIM DAS CONFIGURAÇÕES DO BOTÃO BACK TO TOP-->
+
+
+
+  <!-- Botões de navegação -->
+
+  <div class="text-center">
+    <a href="topico03.html" class="btn btn-outline-success" role="button" aria-pressed="true">
+      <i class="fa-solid fa-chevron-left"></i> Voltar </a>
+    <a href="topico01.html" class="btn btn-outline-success" role="button" aria-pressed="true">Realizar a Atividade
+      Avaliativa <i class="fa-solid fa-chevron-right"></i></a>
+  </div>
+
+  <!-- Botões de navegação -->
+  <div class="text-center">
+    <a href="topico03.html" class="btn btn-outline-success" role="button" aria-pressed="true">
+      <i class="fa-solid fa-chevron-left"></i> Voltar </a>
+    <a href="topico01.html" class="btn btn-outline-success" role="button" aria-pressed="true">Próximo <i
+        class="fa-solid fa-chevron-right"></i></a>
+  </div>
+
+  <!-- BARRA DE PROGRESSO -->
+  <div id="progress-bar"></div>
+  <!-- FIM DA BARRA DE PROGRESSO  -->
+</body>
+
+</html>
+
+<!-- ORGANIZAÇÃO INICIAL -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- HEADER  -->
+<?php
+include('layout/header.php');
+?>
+<!-- FIM DO HEADER  -->
+
+<body>
+  <!-- NAV  -->
+  <?php
+    include('layout/nav.php');
+    ?>
+  <!-- FIM DA NAV -->
+
+  <!-- menu lateral  -->
+  <?php
+    include('layout/menu.php');
+    ?>
+  <!-- FIM do menu lateral   -->
+
+
+
+  <!-- INÍCIO DAS CONFIGURAÇÕES DO BOTÃO BACK TO TOP -->
+
+  <!-- BOTÃO BACK TO TOP COM UMA BARRA DE PROGRESSO -->
+  <div id="back_to_top">
+    <div id="btn_back">
+      <i id="icon_up" class="fa-solid fa-arrow-up"></i>
+    </div>
+  </div>
+  <!-- FIM DAS CONFIGURAÇÕES DO BOTÃO BACK TO TOP-->
+
+  <!-- Botões de navegação -->
+  <div class="text-center">
+    <a href="topico03.html" class="btn btn-outline-success" role="button" aria-pressed="true">
+      <i class="fa-solid fa-chevron-left"></i> Voltar </a>
+    <a href="topico01.html" class="btn btn-outline-success" role="button" aria-pressed="true">Próximo <i
+        class="fa-solid fa-chevron-right"></i></a>
+  </div>
+
+  <!-- FOOTER  -->
+  <?php
+    include('layout/footer.php');
+    ?>
+  <!-- FIM DO FOOTER  -->
+
+</body>
+
+</html>

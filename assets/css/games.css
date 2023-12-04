@@ -1,0 +1,721 @@
+/* ######################## QUIZ BOX ########################## */
+.transparente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+@media (max-width:1250px) {
+    .center {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-left: 35%;
+    }
+}
+
+.start_btn {
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+
+}
+
+.start_btn:hover {
+    transform: scale(1.2);
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult {
+    opacity: 1;
+    z-index: 101;
+    pointer-events: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.start_btn button {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17 134 219);
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 3em 0;
+}
+
+.info_box {
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list {
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .info-list .info span {
+    font-weight: 600;
+    /* color: #007bff; */
+}
+
+.info_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* border: 1px solid #007bff; */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz_box {
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.quiz_box header {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background-color: rgb(17 134 219);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quiz_box header .title {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+section {
+    padding: 25px 30px 20px 30px;
+}
+
+section .que_text {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .option_list {
+    padding: 20px;
+    display: block;
+}
+
+section .option_list .option {
+    background-color: rgb(17 134 219);
+    color: white;
+    /* border: 1px solid #84c5fe; */
+    border-radius: 5px;
+    font-weight: 200;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .option_list .option:last-child {
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover {
+    background-color: rgb(17 134 219);
+    color: white;
+    /* border: 1px solid #b8daff; */
+}
+
+section .option_list .option.correct {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+section .option_list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+section .option_list .option.disabled {
+    pointer-events: none;
+}
+
+section .option_list .option .icon {
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+
+.option_list .option .icon.tick {
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.option_list .option .icon.cross {
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+footer {
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span {
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p {
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child {
+    padding-left: 0px;
+}
+
+footer button {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(17 134 219);
+    color: white;
+    /* border: 1px solid #007bff; */
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+footer button.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.result_box {
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box .icon {
+    font-size: 100px;
+    color: #26a737;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result_box .score_text span {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result_box .score_text span p {
+    padding: 0 4px;
+    font-weight: 600;
+}
+[data-theme="dark"] .score_text p{
+    color: #040504;
+}
+.result_box .buttons {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.result_box .buttons button {
+    margin: 0 10px;
+    height: 55px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* border: 1px solid #007bff; */
+    transition: all 0.3s ease;
+}
+
+.buttons button.restart {
+    background-color: rgb(17 134 219);
+    color: white;
+    transition: 0.4s;
+}
+
+.buttons button.restart:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+.buttons button.quit {
+    background-color: rgb(17 134 219);
+    color: white;
+    transition: 0.4s;
+}
+
+.buttons button.quit:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+.icone {
+    margin-right: 6px;
+}
+
+/* ######################## FIM DO QUIZ BOX ########################## */
+
+/* ################################## GAME EMBARALHAR PALAVRA ################################ */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Poppins:wght@100;300&display=swap');
+
+/* DIV GERAL DO GAME*/
+#game {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* DIV GERAL DO GAME END*/
+
+/* INSTRUÇÕES DO GAME */
+#instrucoes {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+/* INSTRUÇÕES DO GAME END */
+
+/* ESTILIZAÇÃO DO MODAL DAS IMAGENS COM A RESPOSTA (FEITO SEM BOOTSTRAP) */
+#modal-js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -270px;
+
+    :focus {
+        outline: none;
+    }
+}
+
+#modal-js img {
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    /* /* height: 20rem; */
+}
+
+dialog {
+    margin-top: -3.5rem;
+    border-radius: 10px;
+    border: none;
+    z-index: 10;
+    height: 28rem;
+}
+
+.hint {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* ESTILIZAÇÃO DO MODAL DAS IMAGENS COM A RESPOSTA (FEITO SEM BOOTSTRAP) END */
+
+/* INÍCIO BOTÕES PARA FECHAR OS MODAIS DAS IMAGENS COM A RESPOSTA */
+#close01 {
+    float: right;
+    border: none;
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#close01:hover {
+    color: rgb(71, 70, 70);
+}
+
+#close02 {
+    float: right;
+    border: none;
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#close02:hover {
+    color: rgb(71, 70, 70);
+}
+
+#close02 i {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    border: none;
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#close02 i:hover {
+    color: black;
+}
+
+#close03 {
+    float: right;
+    border: none;
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#close03:hover {
+    color: rgb(71, 70, 70);
+}
+
+#close03 i {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    border: none;
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#close03 i:hover {
+    color: black;
+}
+
+/* FIM BOTÕES PARA FECHAR OS MODAIS DAS IMAGENS */
+
+
+/* CONFIGURAÇÕES DO CONTEÚDO DO MODAL */
+.content .word {
+    user-select: none;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 14px;
+    margin-right: -24px;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.content .details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: 500;
+}
+
+.content input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+.content input:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.content input::placeholder {
+    color: #aaa;
+}
+
+.content input:focus::placeholder {
+    color: #bfbfbf;
+}
+
+.content .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+/* -------------- BOTÕES DO GAME -------------- */
+#btn-game {
+    background-color: rgb(17 134 219);
+    color: white;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+}
+
+.buttons button:active {
+    transform: scale(0.97);
+}
+
+.buttons #refresh-word {
+    background: #6C757D;
+}
+
+.buttons #refresh-word:hover {
+    background: #5f666d;
+}
+
+.buttons #check-word {
+    background-color: rgb(17 134 219);
+
+}
+
+.buttons #check-word:hover {
+    background-color: rgb(11, 110, 182);
+}
+
+/* -------------- BOTÕES DO GAME END -------------- */
+
+/* FIM DAS CONFIGURAÇÕES DO CONTEÚDO DO MODAL */
+
+/* INÍCIO DAS CONFIGURAÇÕES DA RESPONSIVIDADE */
+@media screen and (max-width: 470px) {
+    .container h2 {
+        font-size: 22px;
+        padding: 13px 20px;
+    }
+
+    .content .word {
+        font-size: 30px;
+        letter-spacing: 12px;
+        margin-right: -20px;
+    }
+
+    .container .content {
+        margin: 20px 20px 30px;
+    }
+
+    .details p {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .content input {
+        height: 55px;
+        font-size: 17px;
+    }
+
+    .buttons button {
+        padding: 14px 0;
+        font-size: 16px;
+        width: calc(100% / 2 - 7px);
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    dialog {
+        margin-top: -4rem;
+        height: 140%;
+    }
+}
+
+
+
+/* FIM DAS CONFIGURAÇÕES DA RESPONSIVIDADE */
+
+
+/* DIVS TRANPARENTE PARA FECHAR OS MODAIS */
+#divTransparente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#d2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FIM DAS DIVS TRANPARENTE PARA FECHAR OS MODAIS */
+
+
+/* ANIMAÇÕES PARA OS MODAIS DAS IMAGENS */
+/* COLOCANDO AS ANIMAÇÕES DE ENTRADA: */
+
+.modal01 {
+    animation: slide-down 0.5s ease;
+}
+
+.modal02 {
+    animation: slide-down 0.5s ease;
+}
+
+.modal03 {
+    animation: slide-down 0.5s ease;
+}
+
+/* CLASSE E ANIMÇAO DE SAIDA DO MODAL: */
+.fade-out {
+    animation: slide-out 0.5s ease;
+}
+
+/* KEYFRAME DE SAIDA: */
+@keyframes slide-out {
+    from {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* KEYFRAME DE ENTRADA: */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* FIM DAS ANIMAÇÕES PARA OS MODAIS DAS IMAGENS */
+/* ################################## GAME EMBARALHAR PALAVRA END ################################ */
