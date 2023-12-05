@@ -1002,6 +1002,8 @@ include('layout/header.php');
           </p>
          <!--  Fim do Parágrafo com a biblioteca de animação -->
 
+
+
   <!-- FIM DO CONTEUDO INICIO  -->
 
 
@@ -1026,6 +1028,9 @@ include('layout/header.php');
   <!-- BARRA DE PROGRESSO -->
   <div id="progress-bar"></div>
   <!-- FIM DA BARRA DE PROGRESSO  -->
+</div>
+</div>
+</div>
 
   <!-- FOOTER  -->
   <?php

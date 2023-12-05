@@ -129,7 +129,11 @@ include('layout/header.php');
   <!-- BARRA DE PROGRESSO -->
   <div id="progress-bar"></div>
   <!-- FIM DA BARRA DE PROGRESSO  -->
+</div>
 
+</div>
+</div>
+</div>
   <!-- FOOTER  -->
   <?php
   include('layout/footer.php');
