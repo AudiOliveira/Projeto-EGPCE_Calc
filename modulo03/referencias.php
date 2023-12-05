@@ -50,8 +50,9 @@ include('layout/header.php');
 
                         <div class="border border-success m-4 p-4 text-rounded rounded rounded-lg wow animate__fadeInLeftBig"
                             data-wow-delay="0.3s">
-                            <h5>Parabéns! <strong>Nome_Completo</strong> agora você já pode fazer a avaliação do curso
-                                <strong>Calc – Intermediário e Avançado</strong> Módulo 02 abaixo, Boa Sorte e até o próximo Modulo!
+                            <h5>Parabéns! <strong>Nome_Completo</strong> Você chegou ao final do curso
+                                <strong>Calc – Intermediário e Avançado.</strong> Teste os seus conhecimentos respondendo a Avaliação do último módulo.
+Boa sorte e até o próximo curso!
                             </h5>
                         </div>
                         <br>

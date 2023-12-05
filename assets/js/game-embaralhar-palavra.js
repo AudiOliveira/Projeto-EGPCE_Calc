@@ -3,8 +3,8 @@
 // ############################# GAME DE EMBARALHAR PALAVRAS ########################################
 let words = [
     {
-        word: "imediatismo",
-        hint: "Dica: Tudo aquilo que se faz na busca do agora. Maneira direta de proceder, sem mediações nem rodeios."
+        word: "organização",
+        hint: "Dica: Decorre do planejamento, reflete em como a planilha está coerente e estruturada."
     }
     // {
     //     word: "jardim",

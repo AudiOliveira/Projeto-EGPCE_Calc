@@ -135,31 +135,25 @@ $(document).ready(function () {
 });
 
 // ################# FUNÇÃO PARA ABRIR OS CARDS COM IMAGEM E TEXTO #################
-// Select button
-// var button = document.querySelector('#cardmain');
+var cards = document.querySelectorAll('.card');
 
-// Click Event
-// button.addEventListener('click', function() {
-// Select card
-// var card = document.querySelector('#card02');
+// Adiciona evento de clique a cada card
+cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+        var isActive = card.classList.contains('active');
 
-// Add/Remove Class Active
-// card.classList.toggle('active');
+        // Remove a classe 'active' de todos os cards
+        cards.forEach(function (c) {
+            c.classList.remove('active');
+        });
 
-// });
-// ################# FUNÇÃO PARA ABRIR OS CARDS COM IMAGEM E TEXTO END #################
-
-var button = document.querySelector('#card-main');
-
-// Click Event
-button.addEventListener('click', function() {
-  var cards = document.querySelectorAll('.card');
-
-  // Para cada card, adicione ou remova a classe 'active'
-  cards.forEach(function(card) {
-    card.classList.toggle('active');
-  });
+        // Adiciona a classe 'active' apenas ao card clicado se não estiver ativo
+        if (!isActive) {
+            card.classList.add('active');
+        }
+    });
 });
+// ################# FUNÇÃO PARA ABRIR OS CARDS COM IMAGEM E TEXTO END #################
 
 // TOOLTIP 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

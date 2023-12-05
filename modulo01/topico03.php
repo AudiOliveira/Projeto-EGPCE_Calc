@@ -78,13 +78,13 @@ include('layout/header.php');
             </p>
             <!--  Fim do Parágrafo com a biblioteca de animação -->
            
-            <!--CAIXA DE TEXTO EXEMPLO-->
+            <!--CAIXA DE TEXTO ATIVIDADE-->
             <section class="container wow fadeIn" data-wow-delay="0.3s">
               <div class="accordion ">
                 <section id="content">
                   <div class="caixaprincipal" id="tituloexemplo">
                     <div class="div_teste">
-                      <div><i class="fa-regular fa-pen-to-square"></i></i> EXEMPLO </div>
+                      <div><i class="fa-regular fa-pen-to-square"></i></i> ATIVIDADE </div>
                       <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
                     </div>
                   </div> <!--caixa Principal-->
@@ -96,7 +96,7 @@ include('layout/header.php');
                   </div>
                 </section>
             </section>
-            <!-- FIM DA CAIXA EXEMPLO-->
+            <!-- FIM DA CAIXA ATIVIDADE-->
 
             <!-- Parágrafo com a biblioteca de animação  -->
             <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left"><strong>Parabéns! Nome_Completo Você finalizou o Topico 03 

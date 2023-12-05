@@ -66,7 +66,7 @@ include('layout/header.php');
                                         </div>
                           </div>
 
-            <!--  Título Calc01 -->
+            <!--  Título Calc02 -->
             <h2 class="ti wow fadeIn">Proteção de Todas as Células e Planilhas</h2><br>
             
 
@@ -272,28 +272,28 @@ include('layout/header.php');
                 </div>
                 <br><br>
 
-        <!--  Título Calc01 -->
+        <!--  Título Calc03 -->
         <h2 class="ti wow fadeIn">Ocultar Fórmula</h2><br>
 
-        <!-- CAIXA DE TEXTO REFLITA -->
-        <section class="container wow fadeIn" data-wow-delay="0.3s">
-              <div class="accordion">
-                <section id="content">
-                  <div class="caixaprincipal" id="tituloreflita">
-                    <div class="div_teste">
-                      <div><i class="fa-solid fa-head-side-virus"></i> REFLITA </div>
-                      <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
-                    </div>
-                  </div> <!--caixa Principal-->
-                  <div class="accordion-content" id="reflita">
-                    <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
-                    <p class="txt-caixasecundaria">Você deve estar se perguntando: e a opção ‘Ocultar Fórmula’?
-                    </p> <!--caixa secundaria-->
-                  </div>
-                </section>
+          <!--CAIXA DE TEXTO REFLITA -->
+    <section class="container">
+      <div class="accordion ">
+        <section id="content">
+          <section id="content">
+            <div class="caixaprincipal" id="tituloreflita">
+              <div class="div_teste">
+                <div> <i class="fa-solid fa-head-side-virus fa-xl me-2"></i>REFLITA</div>
+                <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
               </div>
-            </section>
-            <!-- FIM DA CAIXA REFLITA -->
+            </div> <!--caixa Principal-->
+            <div class="accordion-content" id="reflita">
+              <p class="txt-aviso"><strong class="opacity-75"> Passe o mouse acima </strong></p>
+              <p class="txt-caixasecundaria">Você deve estar se perguntando: e a opção ‘Ocultar Fórmula’?</p>
+            </div>
+          </section><!--caixa secundaria-->
+      </div>
+    </section>
+    <!-- FIM DA CAIXA REFLITA-->
 
             <!-- Parágrafo com a biblioteca de animação  -->
             <p class="wow fadeIn" data-wow-delay="0.3s" >Ela também só funciona quando a planilha está protegida, 
@@ -302,7 +302,7 @@ include('layout/header.php');
             <!--  Fim do Parágrafo com a biblioteca de animação -->
           <br>
 
-          <!--  Título Calc01 -->
+          <!--  Título Calc04 -->
         <h2 class="ti wow fadeIn">Salvar com Senha</h2><br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -379,7 +379,7 @@ include('layout/header.php');
             <!--  Fim do Parágrafo com a biblioteca de animação -->
             <br>
 
-    <!--  Título Calc01 -->
+    <!--  Título Calc05 -->
     <h2 class="ti wow fadeIn">Desproteção de células e planilhas</h2>
 
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -392,6 +392,93 @@ include('layout/header.php');
                                       </p>
             <!--  Fim do Parágrafo com a biblioteca de animação -->
             <br>
+            
+            <div class="passos" style="justify-content: space-around; grid-template-columns: 40% 50%;">
+
+              <div class="img_apresentacao wow animate__zoomIn" style="margin-left: 0%;">
+                <img src="imgs/Group 4.png" alt="" style="width: 400px;">
+                <p class="FonteFigura FonteMenor text-secondary" id="text-freepik"><strong>Fonte:Imagem retirada do
+                    Freepik</strong>
+                </p>
+              </div>
+              <div>
+                <!-- Parágrafo com a biblioteca de animação  -->
+                <p class="wow fadeIn texto_apresentacao wow animate__zoomIn" data-wow-delay="0.3s">
+                  <strong>Olá, Nome_Completo!</strong><br> Clique no botão a seguir e teste seus conhecimentos.
+                </p><br>
+
+
+                <!-- começo do Quiz botao -->
+                <div class="start_btn wow animate__bounceInRight" data-wow-delay="0.4s"><button id="openModalBtn"><i
+                      class="icone fa-solid fa-puzzle-piece"></i>TESTE SEUS
+                    CONHECIMENTOS</button></div>
+
+                <div class="center">
+                  <div class="info_box">
+                    <div class="info-title"><span><i class="icone fa-solid fa-pen-clip"></i>Regras do
+                        QUIZ</span></div>
+                    <div class="info-list">
+                      <div class="info">1. Depois que você selecionar a respota, não poderá ser desfeito.
+                      </div>
+                      <div class="info">2. Você não pode sair durante o quiz.</div>
+                      <div class="info">3. Você vai receber a pontuação conforme responde as questões.
+                      </div>
+                      <div class="info">4. Esse quiz não vai interferir na sua nota final.</div>
+                    </div>
+                    <div class="buttons">
+                      <button class="quit">Sair</button>
+                      <button class="restart">Continuar</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- caixa do quiz -->
+                <div class="center">
+                  <div class="quiz_box">
+                    <header>
+                      <div class="title"><i class="fa-solid fa-puzzle-piece icone"></i>QUIZ</div>
+                      <div class="time_line"></div>
+                    </header>
+                    <section>
+                      <div class="que_text">
+                        <!-- Aqui é inserido o quiz do javascript -->
+                      </div>
+                      <div class="option_list">
+                        <!-- Aqui é inserido as opções do JavaScript -->
+                      </div>
+                    </section>
+
+                    <!-- footer do quiz -->
+                    <footer>
+                      <div class="total_que">
+                        <!-- aqui está inserido o número de questões do js -->
+                      </div>
+                      <button class="next_btn">Próximo</button>
+                    </footer>
+                  </div>
+                </div>
+
+                <!-- Resultado -->
+                <div class="center">
+                  <div class="result_box">
+                    <div class="img">
+                      <!-- <i class="fa-solid fa-puzzle-piece"></i> -->
+                    </div>
+                    <div class="complete_text">Você completou o quiz!</div>
+                    <div class="score_text">
+                      <!-- Aqui é inserido o resultado -->
+                    </div>
+                    <div class="buttons">
+                      <button class="restart">Tentar novamente</button>
+                      <button class="quit">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim do Quiz -->
+
+
+              </div>
+            </div><br><br>
 
         <!-- Parágrafo com a biblioteca de animação  -->
         <p class="wow fadeIn" data-wow-delay="0.3s"><strong>Parabéns! Nome_Completo Você finalizou o Topico 02 

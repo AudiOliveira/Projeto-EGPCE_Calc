@@ -3,24 +3,24 @@
 let questions = [
     {
     numb: 1,
-    question: "A respeito do sistema 5S, assinale a alternativa CORRETA.",
-    answer: "O Sistema 5S, desenvolvido no Japão, busca aperfeiçoar aspectos relacionados à organização, limpeza e padronização nas organizações.",
+    question: "Na Validação de Dados podem ser validados vários tipos de dados. Nesse contexto, assinale a alternativa INCORRETA.",
+    answer: "Número indecimal.",
     options: [
-      "O Sistema 5S é um programa de gestão de qualidade originado na França, focado na eficiência financeira das organizações.",
-      "O Sistema 5S, desenvolvido no Japão, busca aperfeiçoar aspectos relacionados à organização, limpeza e padronização nas organizações.",
-      "Uma das metas do Sistema 5S é incentivar a desorganização e a falta de padronização para estimular a criatividade no ambiente de trabalho.",
-      " O Sistema 5S não tem relação com a gestão de qualidade, sendo exclusivamente voltado para a promoção da eficiência financeira nas empresas."
+      "Lista.",
+      "Hora.",
+      "Número indecimal.",
+      "Comprimento de Texto."
     ]
   },
     {
     numb: 2,
-    question: "Quais são os elementos fundamentais que compõem os princípios do Sistema 5S?",
-    answer: "Senso de utilização, Senso de organização, Senso de limpeza, Senso de padronização, Senso de disciplina.",
+    question: "De acordo com o tópico Segurança das Informações. Assinale a alternativa que melhor define a função da senha de uma planilha.",
+    answer: "Uma senha é usada para proteger e restringir o acesso não autorizado aos dados sensíveis contidos na planilha.",
     options: [
-      "Senso de inovação, Senso de expansão, Senso de relaxamento, Senso de progresso, Senso de diversificação.",
-      "Senso de desordem, Senso de negligência, Senso de aleatoriedade, Senso de improvisação, Senso de desleixo.",
-      "Senso de utilização, Senso de organização, Senso de limpeza, Senso de padronização, Senso de disciplina.",
-      " Senso de acumulação, Senso de resistência, Senso de desapego, Senso de descuido, Senso de desinteresse."
+      "A senha permite alterar a aparência da planilha, modificando fontes, núcleos e estilos visuais.",
+      "Uma senha é usada para proteger e restringir o acesso não autorizado aos dados sensíveis contidos na planilha.",
+      "A senha possibilita o compartilhamento automático dos dados da planilha com todos os usuários, sem restrições.",
+      "A senha é utilizada para aumentar a velocidade de processamento da planilha, permitindo a execução mais rápida das operações."
     ]
   },
   //   {

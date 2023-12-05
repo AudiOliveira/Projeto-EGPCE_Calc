@@ -327,13 +327,13 @@ include('layout/header.php');
                   </div> 
                         </div>
 
-            <!--CAIXA DE TEXTO EXEMPLO-->
+            <!--CAIXA DE TEXTO ATIVIDADE-->
             <section class="container wow fadeIn" data-wow-delay="0.3s">
               <div class="accordion ">
                 <section id="content">
                   <div class="caixaprincipal" id="tituloexemplo">
                     <div class="div_teste">
-                      <div><i class="fa-regular fa-pen-to-square"></i></i> EXEMPLO </div>
+                      <div><i class="fa-regular fa-pen-to-square"></i></i> ATIVIDADE </div>
                       <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
                     </div>
                   </div> <!--caixa Principal-->
@@ -348,7 +348,7 @@ include('layout/header.php');
                   </div>
                 </section>
             </section>
-            <!-- FIM DA CAIXA EXEMPLO-->
+            <!-- FIM DA CAIXA ATIVIDADE-->
 
           <!-- IMAGEM NO SITE  -->
           <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-center">
@@ -641,6 +641,133 @@ include('layout/header.php');
       </ol>
          <!--  Fim do Parágrafo com a biblioteca de animação -->
 
+        <!-- IMAGEM E JOGO SOBRE O CURSO -->
+        <div class="apresentacao" style="grid-template-columns: 40% 50%;">
+
+<div class="img_apresentacao wow animate__zoomIn" style="margin-left: 0%;">
+  <img src="imgs/Group 4.png" alt="" style="width: 400px;">
+  <p class="FonteFigura FonteMenor text-secondary" id="text-freepik"><strong>Fonte:Imagem retirada do
+      Freepik</strong>
+  </p>
+</div>
+<div>
+  <!-- Parágrafo com a biblioteca de animação  -->
+  <p class="wow fadeIn texto_apresentacao wow animate__zoomIn" data-wow-delay="0.3s">
+    <strong>Olá, Nome_Completo!</strong><br> Clique no botão a seguir e teste seus conhecimentos.
+  </p><br>
+
+  <!-- começo do Quiz botao -->
+  <div class="start_btn wow animate__bounceInRight" data-wow-delay="0.4s"><button
+      data-bs-target="#exampleModalToggle" id="btn-game" data-bs-toggle="modal"><i
+        class="icone fa-solid fa-puzzle-piece"></i>TESTE SEUS
+      CONHECIMENTOS</button></div>
+
+  <!-- ######################################## GAME DE EMBARALHAR PALAVRAS ##################################### -->
+  <div id="game" class="wow fadeIn" data-wow-delay="0.3s">
+    <!-- MODAL 1 - INSTRUÇÕES DO JOGO -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="exampleModalToggleLabel"><i class="fa-solid fa-pen-clip"></i>
+              Instruções do
+              Teste</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fw-normal" id="instrucoes">
+
+            1. Você deverá descobrir qual é a palavraque está embaralhada;<br><br>
+            2. Haverá uma dica para lhe auxiliar;<br><br>
+            3. Ao concluir clique em confirmar;<br><br>
+            4. Este teste não influenciará na avaliação final.<br><br>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn" id="btn-game" data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal">Continuar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2 - INÍCIO DO JOGO -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="exampleModalToggleLabel2"><i class="fa-solid fa-gamepad"></i>
+              Palavra
+              Embaralhada</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <div class="word"></div>
+              <div class="details">
+                <div class="hint"> <span></span></div>
+              </div>
+
+              <input type="text" spellcheck="false" placeholder="Escreva a palavra"
+                id="palavras-respostas">
+
+              <div class="buttons">
+                <button class="btn-game" id="refresh-word">Embaralhar</button>
+                <button class="btn-game" id="check-word">Confirmar</button>
+
+                <div id="divTransparente" class="escondida"></div>
+                <div id="d2" class="escondida" data-bs-dismiss="modal"></div>
+
+                <!-- MODAIS DAS RESPOSTAS -->
+                <!-- MODAL QUANDO A CAIXA DE RESPOSTA ESTIVER VAZIA -->
+                <div id="modal-js">
+                  <dialog class="modal01">
+                    <i id="close01" class="bi bi-x"></i>
+                    <div class="text-center">
+                      <img src="imgs/opps.png" class="img-fluid"
+                        alt="Imagem indicando que a caixa de resposta está vazia.">
+                    </div>
+                  </dialog>
+                </div>
+
+                <!-- MODAL QUANDO A RESPOSTA ESTIVER CORRETA -->
+                <div id="modal-js">
+                  <dialog class="modal02">
+                    <i id="close02" class="bi bi-x" data-bs-dismiss="modal"></i>
+                    <div class="text-center">
+                      <img src="imgs/parabens.png" class="img-fluid"
+                        alt="Imagem indicando que você acertou a resposta.">
+                    </div>
+                  </dialog>
+                </div>
+
+                <!-- MODAL QUANDO A RESPOSTA ESTIVER ERRADA-->
+                <div id="modal-js">
+                  <dialog class="modal03">
+                    <i id="close03" class="bi bi-x"></i>
+                    <div class="text-center">
+                      <img src="imgs/que-pena.png" class="img-fluid"
+                        alt="Imagem indicando que você errou a resposta.">
+                    </div>
+                  </dialog>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br><br>
+  <!-- ######################################## GAME DE EMBARALHAR PALAVRAS END ##################################### -->
+
+</div>
+</div><br>
+<!-- IMAGEM E JOGO SOBRE O CURSO END-->
+
+
+
         <!--  Título Calc08 -->
         <h2 class="ti wow fadeIn">Filtros</h2><br>
 
@@ -726,12 +853,12 @@ include('layout/header.php');
          <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
                     <p class="wow fadeIn" id="" data-wow-delay="0.3s">
-                    <i class="fa fa-bullseye" style="color: #44833d;"></i> As duas opções iniciais são de classificação dos dados, pode selecionar na ordem crescente ou decrescente;<br>
-                    <i class="fa fa-bullseye" style="color: #44833d;"></i> O segundo bloco são opções predefinidas de filtros. A primeira opção de 10 primeiros resultados, 
+                    <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> As duas opções iniciais são de classificação dos dados, pode selecionar na ordem crescente ou decrescente;<br>
+                    <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> O segundo bloco são opções predefinidas de filtros. A primeira opção de 10 primeiros resultados, 
                   exibe os maiores valores da coluna, só funciona com célula que possua números, a segunda opção é seleção 
                   dos dados vazios e, por fim, os não vazios;<br>
-                  <i class="fa fa-bullseye" style="color: #44833d;"></i> Filtro padrão é a segunda opção filtragem, explicaremos a seguir;<br>
-                  <i class="fa fa-bullseye" style="color: #44833d;"></i> A relação exibida é a consolidação dos dados da coluna, desmarque a opção todos abaixo e selecione o resultado que deseja exibir. Se quiser desmarcar ou marcar todas as opções, utilize os botões ao lado de “todos”. Agora, é só confirmar e os dados que serão filtrados.</p>
+                  <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> Filtro padrão é a segunda opção filtragem, explicaremos a seguir;<br>
+                  <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> A relação exibida é a consolidação dos dados da coluna, desmarque a opção todos abaixo e selecione o resultado que deseja exibir. Se quiser desmarcar ou marcar todas as opções, utilize os botões ao lado de “todos”. Agora, é só confirmar e os dados que serão filtrados.</p>
                     <!--  Fim do Parágrafo com a biblioteca de animação -->
                   <div>
 

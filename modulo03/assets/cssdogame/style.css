@@ -1,0 +1,359 @@
+.botao {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;*/
+    background-color: #5372F0;
+  }
+  /* CORPO DO JOGO */
+  .Jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  [data-theme="dark"] #instrucoes li{
+    color: #000;
+    font-weight: bold
+  }
+  .column-A li {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    list-style: none;
+    cursor: pointer;
+  
+    display: flex;
+    flex-wrap: nowrap;
+    /* Adiciona cursor de arraste para elementos arrastáveis */ 
+    
+    list-style: none;
+  
+    background-color:#5f666d ;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+  }
+  .column-A li:hover {
+    transform: scale(1.1);
+    /* color: black; */
+  }
+  .column-B li {
+    list-style: none;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+    min-width:2.5rem;
+    min-height: 2.5rem;
+    text-align: center;
+    
+    list-style: none;
+  }
+  
+  #item-B {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+  
+    padding-top: 5px;
+    padding-bottom: 5px;
+  
+    
+  }
+  #item-B li{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #item-A{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+  
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* FIM DO CORPO DO JOGO */
+  
+  /* ESTRUTURA DO MODAL */
+  #btn-game{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17 134 219);
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius:0 ;
+    margin: 3em 0;
+  }
+  #btn-game:hover{
+    transform: scale(1.1);
+  }
+  #btn-continuar{
+    background-color: rgb(17 134 219);
+    color: white;
+  }
+  #btn-voltar{
+    background-color: rgb(17 134 219);
+    color: white;
+  }
+  #puzzle{
+    margin-right: 8px;
+  }
+  
+  #puzzle2{
+    margin-left: 8px;
+  }
+  
+  /* #close{
+    width: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 400px;
+    color: #3e454b;
+    margin-top: 15px;
+  }
+  
+  #close:hover{
+    color: #636060;
+  } */
+  
+  /* INSTRUÇÕES */
+  .start_btn,
+  .info_box,
+  .quiz_box,
+  .result_box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .info_box.activeInfo,
+  .quiz_box.activeQuiz,
+  .result_box.activeResult{
+      opacity: 1;
+      z-index: 5;
+      pointer-events: auto;
+      transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .info_box .info-list{
+    padding: 15px 30px;
+  }
+  
+  .info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+  }
+  
+  .info_box .info-list .info span{
+    font-weight: 600;
+    color: #007bff;
+  }
+  .info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+  }
+  
+  .info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  .contain.activeInfo {
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .contain {
+    width: 440px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid black;
+    display: none;
+  }
+  
+  .contain h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 16px 25px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .contain .content {
+    margin: 25px 20px 35px;
+  }
+  
+  .content .word {
+    user-select: none;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 24px;
+    margin-right: -24px;
+    word-break: break-all;
+    text-transform: uppercase;
+  }
+  
+  .content .details {
+    margin: 25px 0 20px;
+  }
+  
+  .details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .details p b {
+    font-weight: 500;
+  }
+  
+  .content input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .content input:focus {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  .content input::placeholder {
+    color: #aaa;
+  }
+  
+  .content input:focus::placeholder {
+    color: #bfbfbf;
+  }
+  
+  .content .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .buttons button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(100% / 2 - 8px);
+    transition: all 0.3s ease;
+  }
+  
+  .buttons button:active {
+    transform: scale(0.97);
+  }
+  
+  .buttons .refresh-word {
+    background: #6C757D;
+  }
+  
+  .buttons .refresh-word:hover {
+    background: #5f666d;
+  }
+  
+  .buttons .check-word {
+    background: #5372F0;
+  }
+  
+  .buttons .check-word:hover {
+    background: #2c52ed;
+  }
+  #instrucoes li{
+    padding: 3px;
+  }
+  
+  @media screen and (max-width: 470px) {
+    .container h2 {
+      font-size: 22px;
+      padding: 13px 20px;
+    }
+  
+    .content .word {
+      font-size: 30px;
+      letter-spacing: 20px;
+      margin-right: -20px;
+    }
+  
+    .container .content {
+      margin: 20px 20px 30px;
+    }
+  
+    .details p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  
+    .content input {
+      height: 55px;
+      font-size: 17px;
+    }
+  
+    .buttons button {
+      padding: 14px 0;
+      font-size: 16px;
+      width: calc(100% / 2 - 7px);
+    }
+  }
+  

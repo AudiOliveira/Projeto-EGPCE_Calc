@@ -45,9 +45,11 @@ include('layout/header.php');
                         </p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
 
-                        <!--  Título Calc01 -->
+                        <!--  Título Calc03 -->
                         <h2 class="ti wow fadeIn">Programação de Macros e de Funções</h2><br>
                         
+
+                        <div class="passos" style="justify-content: space-around;">
                         <!-- Parágrafo com a biblioteca de animação  -->
                         <p class="wow fadeIn" data-wow-delay="0.3s" >Antes de começarmos a ver 
                           funções propriamente ditas, veremos um pouco de como criarmos nossas próprias macros. 
@@ -88,6 +90,7 @@ include('layout/header.php');
                         </div>
                         </div>
                         <!-- Imagem - End-->
+                        </div>
 
                         <!-- Parágrafo com a biblioteca de animação  -->
                         <p class="wow fadeIn" data-wow-delay="0.3s" >Aparecerá a janela de edição do Basic. 
@@ -220,7 +223,7 @@ include('layout/header.php');
                         <p class="wow fadeIn" data-wow-delay="0.3s" >Vamos analisar o que cada parte do código faz:</p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
 
-                        <!--  Título Calc01 -->
+                        <!--  Título Calc04 -->
                         <h2 class="ti wow fadeIn">Clique nos Títulos Abaixo para mais Informações!</h2><br>
 
 
@@ -239,7 +242,7 @@ include('layout/header.php');
                                         </button>
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
+                                        data-bs-parent="#accordionFlushExample" style="background-color: #00000000; border-color: rgba(0, 0, 0, 0);">
                                         <div class="accordion-body">Essa linha é o “cabeçalho” da macro, onde inicia 
                                           o código que será executado. Quando foi clicado em “Novo”, nessa linha aparece
                                            escrito o nome que você deu ao seu macro.</div>
@@ -255,7 +258,7 @@ include('layout/header.php');
                                         </button>
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample">
+                                        data-bs-parent="#accordionFlushExample" style="background-color: #00000000; border-color: rgba(0, 0, 0, 0);">
                                         <div class="accordion-body">Linhas que começam com essa palavra 
                                           são apenas comentários, que explicam o que será feito ou qualquer 
                                           outra observação que seja necessária fazer.<br>
@@ -266,80 +269,59 @@ include('layout/header.php');
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button text-light collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTree"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <h5>Entretanto...</h5>
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            <h5>Dim Nome as String</h5>
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseTree" class="accordion-collapse collapse"
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Isso de modo algum nos autoriza a pensar que as
-                                            habilidades de um milionário
-                                            sejam mais importantes que as de um atleta. No entanto, socialmente, fomos
-                                            condicionados a
-                                            valorizar mais alguns tipos de habilidades - como as lógico-matemáticas - em
-                                            prejuízo de
-                                            outras - como as motoras e musicais.</div>
+                                        <div class="accordion-body">Essa linha declara a variável Nome, com tipo de dados String (texto).
+                                        Cada variável que for declarada deve ser colocada em uma linha separada.</div>
                                     </div>
                                 </div>
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button text-light collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTree"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <h5>Entretanto...</h5>
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefive"
+                                            aria-expanded="false" aria-controls="flush-collapsefive">
+                                            <h5>Nome = InputBox("Digite o seu nome:", "Preencha")</h5>
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseTree" class="accordion-collapse collapse"
+                                    <div id="flush-collapsefive" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Isso de modo algum nos autoriza a pensar que as
-                                            habilidades de um milionário
-                                            sejam mais importantes que as de um atleta. No entanto, socialmente, fomos
-                                            condicionados a
-                                            valorizar mais alguns tipos de habilidades - como as lógico-matemáticas - em
-                                            prejuízo de
-                                            outras - como as motoras e musicais.</div>
+                                        <div class="accordion-body">Essa linha atribui o valor digitado na caixa de texto (InputBox) à variável Nome. 
+                                          Os valores entre parênteses se referem aos valores que serão informados ao usuário.</div>
                                     </div>
                                 </div>
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button text-light collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTree"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <h5>Entretanto...</h5>
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                            <h5>MsgBox ("Seja bem-vindo(a), " &Nome &"!", "Boas-vindas")</h5>
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseTree" class="accordion-collapse collapse"
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Isso de modo algum nos autoriza a pensar que as
-                                            habilidades de um milionário
-                                            sejam mais importantes que as de um atleta. No entanto, socialmente, fomos
-                                            condicionados a
-                                            valorizar mais alguns tipos de habilidades - como as lógico-matemáticas - em
-                                            prejuízo de
-                                            outras - como as motoras e musicais.</div>
+                                        <div class="accordion-body">O comando MsgBox faz aparecer apenas uma mensagem, informando o texto que foi colocado entre parênteses. 
+                                          Caso seja necessário inserir valor de variáveis, é usado o símbolo & e depois o nome da variável.</div>
                                     </div>
                                 </div>
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button text-light collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTree"
-                                            aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <h5>Entretanto...</h5>
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            <h5>End Sub</h5>
                                         </button>
                                     </h2>
-                                    <div id="flush-collapseTree" class="accordion-collapse collapse"
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Isso de modo algum nos autoriza a pensar que as
-                                            habilidades de um milionário
-                                            sejam mais importantes que as de um atleta. No entanto, socialmente, fomos
-                                            condicionados a
-                                            valorizar mais alguns tipos de habilidades - como as lógico-matemáticas - em
-                                            prejuízo de
-                                            outras - como as motoras e musicais.</div>
+                                        <div class="accordion-body">Essa indica o fim do código da macro, que foi aberta em Sub SeuNome.</div>
                                     </div>
                                 </div>
 
@@ -362,11 +344,15 @@ include('layout/header.php');
                           A diferença é que, nesse caso, 
                           os parâmetros serão definidos por nós.<br><br>
 
+                          
                           Antes de começar, vamos fazer o seguinte: 
                           uma planilha no qual digitaremos uma data e 
                           desejaremos saber em que dia da semana (por extenso) essa data caiu. 
                           Apesar de trabalhar com funções de datas, o Calc não possui nenhuma que faça isso diretamente. 
-                          O que se pode fazer é utilizar a função DIA.DA.SEMANA, que retornará um número de 0 a 6 ou de 1 a 7, 
+                          O que se pode fazer é utilizar a função</p>
+                          <div class="passos" style="justify-content: space-around;">
+                          <p class="wow fadeIn" data-wow-delay="0.3s" >
+                          DIA.DA.SEMANA, que retornará um número de 0 a 6 ou de 1 a 7, 
                           dependendo de como for configurada a função. Usaremos para esse exemplo a contagem padrão, 
                           que atribui valor 1 para domingo, 2 para segunda-feira, 3 para terça-feira e assim por diante. 
                           A planilha deverá ficar mais ou menos assim:</p>
@@ -398,6 +384,7 @@ include('layout/header.php');
                         </div>
                         </div>
                         <!-- Imagem - End-->
+</div>
 
                         <!-- Parágrafo com a biblioteca de animação  -->
                         <p class="wow fadeIn" data-wow-delay="0.3s" >A função em B2 ficará =DIA.DA.SEMANA(A2), 
@@ -444,8 +431,10 @@ include('layout/header.php');
                           valor da célula (Numero) e o compara com valores de 1 a 7 (Select Case Numero 
                           indica que o valor a ser comparado é o da variável Numero). Caso o valor de Numero 
                           seja um valor que não esteja entre 1 e 7, retornará a mensagem “Dia Inválido” (Case Else). 
-                          Após isso, devemos fechar a função com End Function.<br><br>
+                          Após isso, devemos fechar a função com End Function.<br><br></p>
 
+                          <div class="passos" style="justify-content: space-around;">
+                          <p class="wow fadeIn" data-wow-delay="0.3s" >
                           Vamos testar agora na planilha. Vamos colocar o cursor em C2 e digitar =DIAPOREXTENSO(B2). 
                           Depois podemos copiar a função para as linhas seguintes na mesma coluna. O resultado deverá ficar assim:</p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
@@ -476,6 +465,7 @@ include('layout/header.php');
                         </div>
                         </div>
                         <!-- Imagem - End-->
+</div>
 
                         <!-- CAIXA DE TEXTO IMPORTANTE -->
           <section class="container wow fadeIn" data-wow-delay="0.3s">

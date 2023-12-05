@@ -52,7 +52,7 @@ include('layout/header.php');
                             <h2 id="objetivos" class="wow fadeIn" data-wow-delay="0.3s"> Objetivo</h2><br>
 
                         <!-- Parágrafo com a biblioteca de animação  -->
-                        <p class="wow fadeIn" data-wow-delay="0.3s"><i class="fa fa-bullseye" style="color: #44833d;"></i> Proporcionar ao aluno uma visão mais ampla 
+                        <p class="wow fadeIn" data-wow-delay="0.3s"><i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> Proporcionar ao aluno uma visão mais ampla 
                             acerca da utilização de mais alguns recursos do LibreOffice Calc, por meio de exemplos 
                             práticos, que possam ser úteis em seu cotidiano pessoal e profissional.
                             <!--  Fim do Parágrafo com a biblioteca de animação -->

@@ -1014,6 +1014,7 @@ hr {
     justify-content: center;
     padding-left: 30px;
     margin-left: 5px;
+    margin-bottom: 1rem;
     border: none;
 }
 .accordion-header{
@@ -1055,11 +1056,11 @@ section {
 .accordion {
     width: 100%;
     margin: 2rem 0;
+    background-color: rgba(0, 0, 0, 0);
     /*define o tamanho do acordeon*/
     /* margin: 40px 10px 0px 10px; */
     /*coloquei o top só para tirar lá de cima e nas laterais para no reponsivo não grudar na tela*/
 }
-
 .accordion #content .caixaprincipal {
     text-decoration: none;
     display: block;
@@ -1072,6 +1073,10 @@ section {
 
 #acordion-list{
     margin-bottom: -8rem;
+}
+.accordion-item {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .div_teste {

@@ -37,7 +37,7 @@ include('layout/header.php');
                         <p class="wow fadeIn" style="margin-bottom: 10px;"><strong>Objetivo:</strong> Trabalhar com funções de pesquisa, que auxiliem na busca mais rápida por informações.</p>
                         <br>
 
-                        <!--  Título Calc01 -->
+                        <!--  Título Calc06 -->
                         <h2 class="ti wow fadeIn">Proteção de Todas as Células e Planilhas</h2><br>
                         
                         <!-- Parágrafo com a biblioteca de animação  -->
@@ -51,7 +51,7 @@ include('layout/header.php');
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
 
 
-                        <!--  Título Calc01 -->
+                        <!--  Título Calc07 -->
                         <h2 class="ti wow fadeIn">PROCV</h2><br>
                         
                         <!-- Parágrafo com a biblioteca de animação  -->
@@ -140,7 +140,7 @@ include('layout/header.php');
             </section>
             <!-- FIM DA CAIXA SAIBA MAIS  -->
 
-            <!--  Título Calc01 -->
+            <!--  Título Calc08 -->
             <h2 class="ti wow fadeIn">Função PROCH( )</h2><br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -235,13 +235,13 @@ include('layout/header.php');
             </section>
             <!-- FIM DA CAIXA FIQUE ATENTO -->
 
-            <!--CAIXA DE TEXTO EXEMPLO-->
+            <!--CAIXA DE TEXTO ATIVIDADE-->
            <section class="container wow fadeIn" data-wow-delay="0.3s" style="margin-bottom: 0%;">
               <div class="accordion ">
                 <section id="content">
                   <div class="caixaprincipal" id="tituloexemplo">
                     <div class="div_teste">
-                      <div><i class="fa-regular fa-pen-to-square"></i></i> EXEMPLO </div>
+                      <div><i class="fa-regular fa-pen-to-square"></i></i> ATIVIDADE </div>
                       <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
                     </div>
                   </div> <!--caixa Principal-->
@@ -253,10 +253,10 @@ include('layout/header.php');
                   </div>
                 </section>
             </section>
-            <!-- FIM DA CAIXA EXEMPLO-->
+            <!-- FIM DA CAIXA ATIVIDADE-->
             </div>
 
-            <!--  Título Calc01 -->
+            <!--  Título Calc09 -->
             <h2 class="ti wow fadeIn">Função Índice( ) + Função CORRESP( )</h2><br>
             
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -269,7 +269,8 @@ include('layout/header.php');
                         </p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
 
-             <!--  Título Calc01 -->
+                        <br>
+             <!--  Título Calc10 -->
              <h2 class="ti wow fadeIn">Índice</h2><br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -329,7 +330,7 @@ include('layout/header.php');
                         <!-- Imagem - End-->
                         </div>
 
-                    <!--  Título Calc01 -->
+                    <!--  Título Calc11 -->
             <h2 class="ti wow fadeIn">Corresp( )</h2><br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
@@ -377,7 +378,7 @@ include('layout/header.php');
 
                         </div>
 
-                        <!--  Título Calc01 -->
+                        <!--  Título Calc12 -->
             <h2 class="ti wow fadeIn">Índice( )+Corresp( )</h2><br>
 
             <div class="passos" style="justify-content: space-around;">
@@ -408,13 +409,13 @@ include('layout/header.php');
                         </div>
                         <!-- Imagem - End-->
 
-                        <!--CAIXA DE TEXTO EXEMPLO-->
+                        <!--CAIXA DE TEXTO ATIVIDADE-->
            <section class="container wow fadeIn" data-wow-delay="0.3s" style="margin-bottom: 0%;">
               <div class="accordion ">
                 <section id="content">
                   <div class="caixaprincipal" id="tituloexemplo">
                     <div class="div_teste">
-                      <div><i class="fa-regular fa-pen-to-square"></i></i> EXEMPLO </div>
+                      <div><i class="fa-regular fa-pen-to-square"></i></i> ATIVIDADE </div>
                       <i id="icon-pointer" class="fa-regular fa-hand-pointer fa-beat"></i>
                     </div>
                   </div> <!--caixa Principal-->
@@ -426,7 +427,7 @@ include('layout/header.php');
                   </div>
                 </section>
             </section>
-            <!-- FIM DA CAIXA EXEMPLO-->
+            <!-- FIM DA CAIXA ATIVIDADE-->
 
             </div>
             <br><br>

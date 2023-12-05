@@ -218,7 +218,7 @@ include('layout/header.php');
 
 
               <!-- IMAGEM NO SITE  -->
-            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+            <div class="text-center img-01 wow animate__slideInLeft" data-wow-delay="0.3s" id="img-right">
               <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 4:</strong>
               Criação da Tabela Dinâmica.</p>
               <div class="zoom">
@@ -282,7 +282,7 @@ include('layout/header.php');
 
 
               <!-- IMAGEM NO SITE  -->
-            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+            <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
               <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 6:</strong>
               Editar esquema.</p>
               <div class="zoom">
@@ -325,7 +325,7 @@ include('layout/header.php');
 
 
               <!-- IMAGEM NO SITE  -->
-            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+            <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
               <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 7:</strong>
               Campo de dados.</p>
               <div class="zoom">
@@ -369,8 +369,7 @@ include('layout/header.php');
                                         </p>
               <!--  Fim do Parágrafo com a biblioteca de animação -->
 
-
-          <!--  Título Calc01 -->
+          <!--  Título Calc02 -->
           <h2 class="ti wow fadeIn">Gráficos Dinâmicos</h2><br>
 
 
@@ -392,7 +391,7 @@ include('layout/header.php');
 
 
               <!-- IMAGEM NO SITE  -->
-            <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
+            <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
               <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 8:</strong>
               Assistente de gráfico – Escolha do tipo de gráfico.</p>
               <div class="zoom">
@@ -434,6 +433,128 @@ include('layout/header.php');
           No entanto, todos os gráficos exibem os mesmos dados.<br><br>
                                         </p>
               <!--  Fim do Parágrafo com a biblioteca de animação -->
+
+              <div class="passos" style="justify-content: space-around; grid-template-columns: 40% 50%;">
+
+              <div class="img_apresentacao wow animate__zoomIn" style="margin-left: 0%;">
+                <img src="imgs/Group 4.png" alt="" style="width: 400px;">
+                <p class="FonteFigura FonteMenor text-secondary" id="text-freepik"><strong>Fonte:Imagem retirada do
+                    Freepik</strong>
+                </p>
+              </div>
+              <div>
+                <div>
+                <!-- Parágrafo com a biblioteca de animação  -->
+                <p class="wow fadeIn texto_apresentacao wow animate__zoomIn" data-wow-delay="0.3s">
+                  <strong>Olá, Nome_Completo!</strong><br> Clique abaixo e participe de um jogo sobre o conteúdo apresentado para solidificar o seu aprendizado.
+                </p><br>
+
+
+                <!-- MODAL 1 - INSTRÇÕES DO JOGO -->
+                <div>
+                                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                                        tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-3" id="exampleModalToggleLabel"><i class="fa-solid fa-pen-clip"></i> Instruções do
+                                                Teste</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body fw-medium">
+                                                <ol id="instrucoes">
+                                                <li>Esse será um jogo para relacionar duas colunas</li>
+                                                <li>Para computador arraste a letra do item até o espaço vazio<br>
+                                                    Para celular toque na letra do item e depois no espaço vazio
+                                                </li>
+                                                <li>Se for colocado duas letras no mesmo espaço será considerada a última letra colocada</li>
+                                                <li>Se a resposta estiver correta ficara verde</li>
+                                                <li>Este teste não influenciará na avaliação final.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <button class="btn" id="btn-continuar" data-bs-target="#exampleModalToggle2"
+                                                data-bs-toggle="modal">Continuar</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <!-- MODAL 2 - INÍCIO DO JOGO -->
+                                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                                        tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-3" id="exampleModalToggleLabel2"><i class="fa-solid fa-gamepad"></i> Relacione as
+                                                colunas</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="Jogo">
+                                                <ul class="column-A">
+                                                <div id="item-A">
+                                                    <li draggable="true">A</li>Tabela Dinâmica
+                                                </div>
+                                                <div id="item-A">
+                                                    <li draggable="true">B</li>Gráficos Dinâmicos
+                                                </div>
+                                                
+                                                </ul>
+
+                                                <ul class="column-B">
+                                                <div id="item-B">
+                                                    <p>
+                                                    <li class="dropzone" data-resposta="B"></li>Reagem dinamicamente às mudanças nos dados, oferecendo uma representação visual imediata e interativa.
+                                                    </p>
+                                                </div>
+                                                <div id="item-B">
+                                                    <p>
+                                                    <li class="dropzone" data-resposta="B"></li>Mostra a série de dados, as categorias e os eixos de forma dinâmica e simples.
+                                                    </p>
+                                                </div>
+                                                <div id="item-B">
+                                                    <p>
+                                                    <li class="dropzone" data-resposta="A"></li>É utilizado para resumir, analisar, explorar e 
+                                                    apresentar dados de resumo e para ver comparações, padrões e tendências facilmente.
+                                                    </p>
+                                                </div>
+                                                <div id="item-B">
+                                                    <p>
+                                                    <li class="dropzone" data-resposta="A"></li>Organizam e apresentam dados de forma estruturada e detalhada, permitindo análises mais específicas e manipulação flexível.
+                                                    </p>
+                                                </div>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer d-flex justify-content-center">
+                                                <button class="btn" id="btn-voltar" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal">Voltar</button>
+                                                <button class="btn" id="btn-voltar" data-bs-dismiss="modal"
+                                            aria-label="Close">Concluído</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                    <button class="btn d-flex align-items-center wow animate__bounceInRight" data-wow-delay="0.4s" data-bs-target="#exampleModalToggle"
+                                        id="btn-game" data-bs-toggle="modal"><i class="fa-solid fa-puzzle-piece text-light" id="puzzle"></i>CLIQUE E TESTE SEUS CONHECIMENTOS</i></button>
+</div>
+</div>                  
+                                    
+                                    
+
+                                
+                        
+                    
+            
+
+
+              
+            </div><br><br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
             <p class="wow fadeIn"  data-wow-delay="0.3s"><strong>Parabéns! Nome_Completo Você finalizou o Topico 01 do modulo 03 do curso Calc Intermediário e Avançado. Boa sorte no Próximo Topico!</strong><p>
