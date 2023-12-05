@@ -176,7 +176,7 @@ include('layout/header.php');
 
                 <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
-                    <p class="wow fadeIn" id="" data-wow-delay="0.3s">
+                    <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
                     <strong>
                     Na caixa de diálogo seguinte, dê um nome para o seu 
                     modelo e escolha uma das categorias para armazená-lo.</strong></p>
@@ -214,7 +214,7 @@ include('layout/header.php');
 
                 <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
-                    <p class="wow fadeIn" id="" data-wow-delay="0.3s">
+                    <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
                     <strong>
                     Após a definição do modelo, basta clicar no menu “Arquivo” → “Modelos” → “Salvar como modelo”.
                     Nesse caso, chamamos o modelo de “Tabela de Comissão” e escolhemos como categoria modelo a “Meus modelos”.

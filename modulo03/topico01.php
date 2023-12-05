@@ -50,7 +50,7 @@ include('layout/header.php');
             </div>
             <!--  Figura da página -->
             <div class="img_apresentacao wow animate__slideInRight" data-wow-delay="0.3s">
-                                <img src="imgs/Group 17.png" alt="">
+                                <img src="imgs/Group 1.png" alt="">
                                 <p class="FonteFigura FonteMenor text-secondary" id="text-freepik">
                                     <strong>Fonte: </strong>
                                     <a href="https://www.freepik.com/free-vector/multitasking-concept_6596995.htm"

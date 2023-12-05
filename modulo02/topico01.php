@@ -192,7 +192,7 @@ include('layout/header.php');
             <div class="passos">
             <div>
             <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" id="" data-wow-delay="0.3s">Feito isso, clique em ‘OK’. Você voltará para a planilha, 
+            <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">Feito isso, clique em ‘OK’. Você voltará para a planilha, 
               porém ao selecionar uma das células, que foram validadas, aparecerá o símbolo, que ao ser pressionado 
               mostrará uma caixa de seleção, contendo os valores que foram digitados na lista. Veja:<p>
           </div>
@@ -231,7 +231,7 @@ include('layout/header.php');
                 <div class="passos">
                   <div>
             <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" id="" data-wow-delay="0.3s">Isso quer dizer que, no intervalo em que foi feita a validação, 
+            <p class="wow fadeIn"  data-wow-delay="0.3s">Isso quer dizer que, no intervalo em que foi feita a validação, 
               será permitido digitar ou selecionar apenas os valores que estão na lista. Caso você digite um valor diferente 
               dos valores da lista, aparecerá uma mensagem de erro, similar à da Imagem 04.<p>
           </div>
@@ -406,11 +406,10 @@ include('layout/header.php');
               em ‘Mínimo’, digitarmos 10000 (sem pontos, vírgulas etc., a menos que se queira usar um valor 
               “quebrado” como mínimo, por exemplo, 10345,32).<p>
             <!--  Fim do Parágrafo com a biblioteca de animação -->
-            <br><br>
+            <br>
 
             <div class="bd-callout bd-callout-success passos wow animate__slideInLeft">
             
-
                     <!-- IMAGEM NO SITE  -->
             <div class="text-center img-01" data-wow-delay="0.3s" id="img-right">
               <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 8</strong></p>

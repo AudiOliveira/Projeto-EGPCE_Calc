@@ -44,6 +44,7 @@ include('layout/header.php');
                             A seguir, apresentamos alguns níveis de proteção do Calc:
                         </p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
+                        <br>
 
                         <!--  Título Calc03 -->
                         <h2 class="ti wow fadeIn">Programação de Macros e de Funções</h2><br>
@@ -98,7 +99,7 @@ include('layout/header.php');
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
 
                       <!-- IMAGEM NO SITE  -->
-                      <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
+                      <div class="text-center img-01 wow animate__slideInLeft" data-wow-delay="0.3s" id="img-right">
                         <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 10:</strong>
                         Código para Macro.</p>
                         <div class="zoom">
@@ -130,7 +131,7 @@ include('layout/header.php');
 
 
                         <!-- IMAGEM NO SITE  -->
-                      <div class="text-center img-01 wow animate__zoomIn" data-wow-delay="0.3s" id="img-right">
+                      <div class="text-center img-01 wow animate__slideInRight" data-wow-delay="0.3s" id="img-right">
                         <p class="TituloFigura FonteMenor text-secondary p-2"><strong>Figura 11:</strong>
                         Executar o Basic.</p>
                         <div class="zoom">

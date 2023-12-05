@@ -17,10 +17,10 @@ let questions = [
     question: "De acordo com o tópico Segurança das Informações. Assinale a alternativa que melhor define a função da senha de uma planilha.",
     answer: "Uma senha é usada para proteger e restringir o acesso não autorizado aos dados sensíveis contidos na planilha.",
     options: [
-      "A senha permite alterar a aparência da planilha, modificando fontes, núcleos e estilos visuais.",
+      "A senha é utilizada para permitir o acesso irrestrito a qualquer pessoa interessada no conteúdo da planilha.",
       "Uma senha é usada para proteger e restringir o acesso não autorizado aos dados sensíveis contidos na planilha.",
-      "A senha possibilita o compartilhamento automático dos dados da planilha com todos os usuários, sem restrições.",
-      "A senha é utilizada para aumentar a velocidade de processamento da planilha, permitindo a execução mais rápida das operações."
+      "garante que todos os usuários possam visualizar, editar ou modificar as informações contidas.",
+      "A senha é essencial para permitir que os usuários tenham fácil acesso aos dados da planilha."
     ]
   },
   //   {

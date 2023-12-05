@@ -273,7 +273,7 @@ include('layout/header.php');
                 <br><br>
 
         <!--  Título Calc03 -->
-        <h2 class="ti wow fadeIn">Ocultar Fórmula</h2><br>
+        <h2 class="ti wow fadeIn">Ocultar Fórmula</h2>
 
           <!--CAIXA DE TEXTO REFLITA -->
     <section class="container">

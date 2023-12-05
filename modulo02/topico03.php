@@ -49,6 +49,7 @@ include('layout/header.php');
                             elas trabalham em conjunto, proporcionando excelentes resultados.
                         </p>
                         <!--  Fim do Parágrafo com a biblioteca de animação -->
+                        <br>
 
 
                         <!--  Título Calc07 -->
@@ -59,10 +60,12 @@ include('layout/header.php');
                              Com ela podemos fazer uma busca de um determinado valor dentro de um intervalo e retornar como resultado um valor 
                              de uma coluna adjacente.<br><br>
 
-                            A estrutura da função PROCV é a seguinte:<br><br>
+                            A estrutura da função PROCV é a seguinte:<br><br></p>
+                        
+                            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-center">
+                            <strong>=PROCV (VALOR_PROCURADO; INTERVALO_DE_PESQUISA; ÍNDICE_DA_COLUNA; ORDEM)</strong><br><br></p>
 
-                            <strong>=PROCV (VALOR_PROCURADO; INTERVALO_DE_PESQUISA; ÍNDICE_DA_COLUNA; ORDEM)</strong><br><br>
-
+                            <p class="wow fadeIn" data-wow-delay="0.3s" >
                             O valor procurado é pesquisado dentro da primeira coluna do intervalo de pesquisa. Quando o valor é encontrado, 
                             o resultado correspondente, indicado pelo índice da coluna, é apresentado. A ordem é um argumento opcional, que 
                             pode assumir o valor verdadeiro ou falso. Caso tenha o valor falso, a pesquisa será realizada sempre considerando 

@@ -158,7 +158,7 @@ include('layout/header.php');
           
             <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
-                    <p class="wow fadeIn" id="" data-wow-delay="0.3s">
+                    <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
                     <strong>
                     Para criar um nome, algumas regras devem ser bedecidas:<br><br>
 
@@ -251,7 +251,7 @@ include('layout/header.php');
 
             <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
-                    <p class="wow fadeIn" id="" data-wow-delay="0.3s">
+                    <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
                     Para visualizar todos os nomes atribuídos a células ou regiões nas planilhas, 
                     basta clicar na seta Drop Down, na caixa Nome, à esquerda na barra de fórmulas.</p>
                     <!--  Fim do Parágrafo com a biblioteca de animação -->
@@ -287,7 +287,7 @@ include('layout/header.php');
             
                 <div class="passos">
             <!-- Parágrafo com a biblioteca de animação  -->
-            <ol class="wow fadeIn" id="" data-wow-delay="0.3s">
+            <ol class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
   <p>Para excluir um nome, faça o seguinte:<p>
   <li>Clique no menu “Planilha” → “Intervalos Nomeados e Expressões” → “Gerenciar nomes”. 
       Ou, aperte simplesmente CTRL + F3 no teclado.
@@ -385,6 +385,7 @@ include('layout/header.php');
           Com os recursos de classificação e a aplicação de filtros simples vistos no módulo básico, são criadas novas 
           perspectivas para ajustar os dados às suas necessidades.</p>
           <!--  Fim do Parágrafo com a biblioteca de animação -->
+          <br>
 
         <!--  Título Calc04 -->
         <h2 class="ti wow fadeIn">Classificação de dados</h2><br>
@@ -489,6 +490,7 @@ include('layout/header.php');
                             </div>
         </div>
          <!--  Fim do Parágrafo com a biblioteca de animação -->
+         <br>
 
         <!--  Título Calc06 -->
         <h2 class="ti wow fadeIn">Criação de Subtotais</h2><br>
@@ -848,11 +850,11 @@ include('layout/header.php');
         ao clicar no combo (ou seta) será exibida uma caixa de diálogo com várias opções de filtro.
           </p>
          <!--  Fim do Parágrafo com a biblioteca de animação -->
-         <br><br>
+         <br>
 
          <div class="passos">
                     <!-- Parágrafo com a biblioteca de animação  -->
-                    <p class="wow fadeIn" id="" data-wow-delay="0.3s">
+                    <p class="wow fadeIn" id="text-left" data-wow-delay="0.3s">
                     <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> As duas opções iniciais são de classificação dos dados, pode selecionar na ordem crescente ou decrescente;<br>
                     <i class="fa fa-dot-circle text-success" style="color: #44833d;"></i> O segundo bloco são opções predefinidas de filtros. A primeira opção de 10 primeiros resultados, 
                   exibe os maiores valores da coluna, só funciona com célula que possua números, a segunda opção é seleção 
@@ -992,6 +994,7 @@ include('layout/header.php');
               </div>
             </div>
             <!-- Imagem - End-->
+            <br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
         <p class="wow fadeIn" id="" data-wow-delay="0.3s">

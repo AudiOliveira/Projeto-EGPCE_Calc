@@ -40,9 +40,10 @@ include('layout/header.php');
       
             <!--  Título Calc11 -->
             <h2 class="ti wow fadeIn">Função E( )</h2>
+            <br>
 
             <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left">Essa função é utilizada em conjunto com a função SE e permite criar até 30 condições, 
+            <p class="wow fadeIn" data-wow-delay="0.3s">Essa função é utilizada em conjunto com a função SE e permite criar até 30 condições, 
               que retornarão um valor verdadeiro, se todas elas forem satisfeitas. No entanto, caso uma delas não seja satisfeita, o resultado será falso.<br><br>
               Sintaxe: =SE(E(condição1; condição2);VERDADEIRO;FALSO)<br><br>
               Exemplo de emprego da função lógica E( ) :<br><br>
@@ -65,10 +66,11 @@ include('layout/header.php');
 
              <!--  Título Calc12 -->
              <h2 class="ti wow fadeIn">Função Ou( )</h2>
+             <br>
 
             
             <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left">Essa função é utilizada em conjunto com a função SE e 
+            <p class="wow fadeIn" data-wow-delay="0.3s">Essa função é utilizada em conjunto com a função SE e 
               permite criar uma cadeia de condições, com uma única diferença em relação à função E: basta que uma condição 
               seja satisfeita, para que o resultado seja verdadeiro.<br><br>
               Exemplo de emprego da função lógica OU( ) :<br><br>
@@ -99,7 +101,7 @@ include('layout/header.php');
             <!-- FIM DA CAIXA ATIVIDADE-->
 
             <!-- Parágrafo com a biblioteca de animação  -->
-            <p class="wow fadeIn" data-wow-delay="0.3s" id="text-left"><strong>Parabéns! Nome_Completo Você finalizou o Topico 03 
+            <p class="wow fadeIn" data-wow-delay="0.3s"><strong>Parabéns! Nome_Completo Você finalizou o Topico 03 
               do modulo 01 do curso Calc Intermediário e Avançado.</strong></p>
             <!--  Fim do Parágrafo com a biblioteca de animação -->
 
